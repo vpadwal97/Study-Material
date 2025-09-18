@@ -259,3 +259,99 @@ export default async function ProductPage({ params }) {
 
 👉 Next up is 4. Segment Route. Do you want me to continue in the same structured way?
 
+Great 💡 Let’s continue.
+
+
+---
+
+4. Segment Route in Next.js
+
+Definition
+
+A segment route in Next.js refers to each folder (or path segment) that represents a part of the URL. In the App Router (Next.js 13+), every folder in app/ is a route segment, and inside it, you can place page.js, layout.js, loading.js, etc.
+
+
+---
+
+Simple Explanation
+
+A URL is made of segments → /dashboard/settings/profile
+
+dashboard → first segment
+
+settings → second segment
+
+profile → third segment
+
+
+Each segment can have its own layout, middleware, and error handling.
+
+
+
+---
+
+Code Example
+
+Example:
+
+app/
+ ├── dashboard/
+ │     ├── layout.js
+ │     ├── page.js
+ │     └── settings/
+ │           ├── page.js
+ │           └── profile/
+ │                 └── page.js
+
+Visiting /dashboard → loads app/dashboard/page.js
+
+Visiting /dashboard/settings → loads app/dashboard/settings/page.js
+
+Visiting /dashboard/settings/profile → loads app/dashboard/settings/profile/page.js
+
+
+layout example:
+
+// app/dashboard/layout.js
+export default function DashboardLayout({ children }) {
+  return (
+    <div>
+      <h2>Dashboard Layout</h2>
+      <div>{children}</div>
+    </div>
+  );
+}
+
+
+---
+
+Interview Q&A
+
+Q: What are route segments in Next.js?
+
+Answer: Route segments are the folder names inside the app/ directory that define different parts of the URL.
+
+Simple Explanation: Each folder is one segment of the URL path.
+
+
+Q: Can route segments have their own layouts?
+
+Answer: Yes, every route segment can define its own layout.js to wrap all its pages.
+
+
+Q: What is the difference between dynamic route and segment route?
+
+Answer:
+
+Dynamic route → variable part in the URL (/products/[id]).
+
+Segment route → fixed or dynamic folder structure inside app/ that maps to a URL path.
+
+
+
+
+---
+
+👉 Next topic is 5. What is Routing in Next.js.
+Do you want me to keep going with the same definition → explanation → code → interview Q&A format?
+
