@@ -1,0 +1,228 @@
+Alright 🚀 Let me give you a complete Next.js project structure with Razorpay integration — including frontend (checkout button), backend (API routes), and environment setup.
+
+
+---
+
+📂 Project Structure
+
+my-next-razorpay/
+│── pages/
+│   ├── index.js            # Home page with Pay button
+│   └── api/
+│       ├── create-order.js # API to create order
+│       └── verify-payment.js # API to verify payment
+│── .env.local              # Environment variables
+│── package.json
+
+
+---
+
+🔹 1. Install Dependencies
+
+npx create-next-app my-next-razorpay
+cd my-next-razorpay
+npm install razorpay
+
+
+---
+
+🔹 2. Add Environment Variables
+
+Create .env.local at the root:
+
+RAZORPAY_KEY_ID=rzp_test_xxxxxxxxxx
+RAZORPAY_KEY_SECRET=yyyyyyyyyyyyyyyyy
+NEXT_PUBLIC_RAZORPAY_KEY_ID=rzp_test_xxxxxxxxxx
+
+⚠️
+
+RAZORPAY_KEY_SECRET → never exposed (server only).
+
+NEXT_PUBLIC_RAZORPAY_KEY_ID → can be used in frontend.
+
+
+
+---
+
+🔹 3. Backend API – Create Order
+
+📂 pages/api/create-order.js
+
+import Razorpay from "razorpay";
+
+export default async function handler(req, res) {
+  if (req.method !== "POST") {
+    return res.status(405).json({ message: "Method not allowed" });
+  }
+
+  try {
+    const razorpay = new Razorpay({
+      key_id: process.env.RAZORPAY_KEY_ID,
+      key_secret: process.env.RAZORPAY_KEY_SECRET,
+    });
+
+    const options = {
+      amount: req.body.amount * 100, // amount in paise
+      currency: "INR",
+      receipt: `receipt_order_${Date.now()}`,
+    };
+
+    const order = await razorpay.orders.create(options);
+    res.status(200).json(order);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+}
+
+
+---
+
+🔹 4. Backend API – Verify Payment
+
+📂 pages/api/verify-payment.js
+
+import crypto from "crypto";
+
+export default async function handler(req, res) {
+  if (req.method !== "POST") {
+    return res.status(405).json({ message: "Method not allowed" });
+  }
+
+  try {
+    const { razorpay_order_id, razorpay_payment_id, razorpay_signature } = req.body;
+
+    const sign = razorpay_order_id + "|" + razorpay_payment_id;
+    const expectedSign = crypto
+      .createHmac("sha256", process.env.RAZORPAY_KEY_SECRET)
+      .update(sign.toString())
+      .digest("hex");
+
+    if (razorpay_signature === expectedSign) {
+      return res.status(200).json({ success: true, message: "Payment verified" });
+    } else {
+      return res.status(400).json({ success: false, message: "Invalid signature" });
+    }
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+}
+
+
+---
+
+🔹 5. Frontend – Checkout Page
+
+📂 pages/index.js
+
+import { useState } from "react";
+
+export default function Home() {
+  const [loading, setLoading] = useState(false);
+
+  const loadRazorpay = async () => {
+    setLoading(true);
+
+    // Load Razorpay script dynamically
+    const script = document.createElement("script");
+    script.src = "https://checkout.razorpay.com/v1/checkout.js";
+    script.onload = async () => {
+      setLoading(false);
+
+      // Call backend to create order
+      const orderRes = await fetch("/api/create-order", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ amount: 500 }), // ₹500
+      });
+
+      const order = await orderRes.json();
+
+      const options = {
+        key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID, // Only Key ID here
+        amount: order.amount,
+        currency: order.currency,
+        name: "My Next.js Shop",
+        description: "Test Transaction",
+        order_id: order.id,
+        handler: async function (response) {
+          // Send payment info to backend for verification
+          const verifyRes = await fetch("/api/verify-payment", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(response),
+          });
+
+          const verifyData = await verifyRes.json();
+          if (verifyData.success) {
+            alert("✅ Payment successful & verified!");
+          } else {
+            alert("❌ Payment verification failed.");
+          }
+        },
+        prefill: {
+          name: "Your Name",
+          email: "email@example.com",
+          contact: "9999999999",
+        },
+        theme: { color: "#3399cc" },
+      };
+
+      const rzp = new window.Razorpay(options);
+      rzp.open();
+    };
+
+    document.body.appendChild(script);
+  };
+
+  return (
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h1>Next.js Razorpay Integration</h1>
+      <button onClick={loadRazorpay} disabled={loading}>
+        {loading ? "Processing..." : "Pay ₹500"}
+      </button>
+    </div>
+  );
+}
+
+
+---
+
+🔹 6. Run the Project
+
+npm run dev
+
+Open: http://localhost:3000
+Click Pay ₹500 → Razorpay Checkout opens.
+
+
+---
+
+✅ Flow Recap
+
+1. User clicks Pay → Next.js frontend loads Razorpay script.
+
+
+2. Frontend calls /api/create-order → backend creates order securely.
+
+
+3. Razorpay Checkout opens → user pays.
+
+
+4. Razorpay returns payment_id, order_id, signature.
+
+
+5. Frontend sends this to /api/verify-payment.
+
+
+6. Backend verifies payment with KEY_SECRET.
+
+
+7. ✅ Payment confirmed securely.
+
+
+
+
+---
+
+Do you also want me to extend this example with a MongoDB/MySQL database integration so that successful payments are automatically stored in your DB?
+
