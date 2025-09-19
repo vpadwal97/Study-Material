@@ -939,3 +939,116 @@ SSG: Rendered at build time → fastest, SEO friendly.
 Do you want me to explain that next in the same format?
 
  
+
+
+
+Perfect 🚀 let’s break down ISR.
+
+
+---
+
+10. What is ISR (Incremental Static Regeneration) in Next.js?
+
+Definition
+
+Incremental Static Regeneration (ISR) in Next.js allows you to update static pages (SSG) after the site has been built, without needing a full rebuild. It regenerates the page in the background when a request comes after a set time (revalidate).
+
+
+---
+
+Simple Explanation
+
+Normal SSG → page is generated once at build time, never changes until rebuild.
+
+With ISR → you can tell Next.js: “Regenerate this page every X seconds.”
+
+The first request after the time expires triggers regeneration, but users still get the old page until the new one is ready.
+
+
+
+---
+
+Code Example
+
+Pages Router (Next.js 12 style):
+
+// pages/products/[id].js
+export default function Product({ product }) {
+  return (
+    <div>
+      <h1>{product.title}</h1>
+      <p>{product.description}</p>
+    </div>
+  );
+}
+
+export async function getStaticPaths() {
+  return {
+    paths: [{ params: { id: "1" } }, { params: { id: "2" } }],
+    fallback: "blocking",
+  };
+}
+
+export async function getStaticProps({ params }) {
+  const res = await fetch(`https://fakestoreapi.com/products/${params.id}`);
+  const product = await res.json();
+
+  return {
+    props: { product },
+    revalidate: 60, // Regenerate page every 60s
+  };
+}
+
+App Router (Next.js 13+ style):
+
+// app/products/[id]/page.js
+export default async function ProductPage({ params }) {
+  const res = await fetch(`https://fakestoreapi.com/products/${params.id}`, {
+    next: { revalidate: 60 }, // ISR in App Router
+  });
+  const product = await res.json();
+
+  return (
+    <div>
+      <h1>{product.title}</h1>
+      <p>{product.description}</p>
+    </div>
+  );
+}
+
+👉 Page regenerates every 60 seconds in the background.
+
+
+---
+
+Interview Q&A
+
+Q: What is ISR in Next.js?
+
+Answer: ISR allows static pages to be updated at runtime by regenerating them in the background after a set revalidate interval.
+
+Simple Explanation: Static pages update automatically without rebuilding the whole app.
+
+
+Q: How is ISR different from SSG?
+
+Answer:
+
+SSG: Page generated once at build time, never changes.
+
+ISR: Page generated at build time, but updated periodically.
+
+
+
+Q: When should you use ISR?
+
+Answer: ISR is useful for content that changes occasionally but doesn’t need to be real-time, like blogs, product listings, news articles.
+
+
+
+---
+
+👉 Next up is 11. Middleware in Next.js.
+Shall I continue with that?
+
+ 
