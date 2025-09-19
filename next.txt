@@ -320,3 +320,98 @@ Segment route → fixed or dynamic folder structure inside app/ that maps to a U
 👉 Next topic is 5. What is Routing in Next.js.
 Do you want me to keep going with the same definition → explanation → code → interview Q&A format?
 
+Perfect 👍 let’s continue.
+
+
+---
+
+5. What is Routing in Next.js?
+
+Definition
+
+Routing in Next.js is the system that maps files and folders inside the pages/ (Pages Router) or app/ (App Router) directory to URLs in the application.
+
+
+---
+
+Simple Explanation
+
+Unlike React (where we need react-router-dom), Next.js has file-based routing built-in.
+
+Each file → becomes a route.
+
+Example:
+
+pages/index.js → /
+
+pages/about.js → /about
+
+app/blog/page.js → /blog
+
+
+
+
+---
+
+Code Example
+
+Pages Router (Next.js 12 style):
+
+pages/
+ ├── index.js        → "/"
+ ├── about.js        → "/about"
+ └── contact.js      → "/contact"
+
+// pages/about.js
+export default function About() {
+  return <h1>About Page</h1>;
+}
+
+App Router (Next.js 13+ style):
+
+app/
+ ├── page.js         → "/"
+ ├── about/
+ │    └── page.js    → "/about"
+ └── contact/
+      └── page.js    → "/contact"
+
+// app/about/page.js
+export default function AboutPage() {
+  return <h1>About Page</h1>;
+}
+
+
+---
+
+Interview Q&A
+
+Q: How does routing work in Next.js?
+
+Answer: Next.js uses file-based routing. Each file inside the pages/ or app/ directory automatically becomes a route. No external router library is needed.
+
+
+Q: What is the difference between Pages Router and App Router in Next.js?
+
+Answer:
+
+Pages Router (Next.js ≤12): uses pages/ directory, with _app.js, _document.js, and getStaticProps/getServerSideProps.
+
+App Router (Next.js 13+): uses app/ directory, supports nested layouts, server components, and async data fetching by default.
+
+
+
+Q: How do you create nested routes in Next.js?
+
+Answer: By creating nested folders. Example:
+
+app/dashboard/settings/page.js → /dashboard/settings
+
+
+
+
+---
+
+👉 Next up: 6. What is Pre-rendering in Next.js?
+Do you want me to explain that next in the same structured way?
+
