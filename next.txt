@@ -721,7 +721,7 @@ SSG: HTML generated once at build time (faster, cached data).
 
 ---
 
-👉 Next up is 8. What is Server-Side Generation Props (SSG)?
+👉 Next up is 8. What is Static Site Generation Props (SSG)?
 Do you want me to go ahead with that in the same style?
 
 
@@ -730,8 +730,8 @@ Perfect 🚀 let’s continue.
 
 ---
 
-8. What is Server-Side Generation Props (SSG) in Next.js?
-(Correct term is Static Site Generation (SSG), sometimes people mistakenly say “Server-Side Generation”).
+8. What is Static Site Generation Props (SSG) in Next.js?
+(Correct term is Static Site Generation (SSG), sometimes people mistakenly say “Static Site Generation”).
 Definition
 Static Site Generation (SSG) in Next.js means pre-rendering pages at build time into static HTML, which can then be reused for all requests. It uses getStaticProps (and optionally getStaticPaths for dynamic routes).
 
@@ -840,4 +840,3 @@ export async function getStaticProps({ params }) {
 
 👉 Next up is 9. What is Client-Side Rendering (CSR) Props?
 Want me to continue in the same structured way?
-
