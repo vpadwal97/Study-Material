@@ -1199,3 +1199,295 @@ Answer: Because <Script> in Next.js optimizes performance and ensures scripts lo
 
 👉 Next up is 13. Image Component in Next.js.
 Do you want me to continue with that in the same structured way?
+
+
+
+
+Perfect 👍 let’s move to the next one.
+
+
+---
+
+13. Image Component in Next.js
+
+Definition
+
+The <Image> component in Next.js is a built-in component for optimizing images automatically (resizing, lazy loading, WebP conversion, caching).
+
+
+---
+
+Simple Explanation
+
+Regular <img> can cause performance issues (large files, no optimization).
+
+<Image> automatically:
+
+Resizes images based on device screen.
+
+Uses lazy loading by default.
+
+Serves modern formats like WebP if supported.
+
+Improves Core Web Vitals (important for SEO).
+
+
+
+
+---
+
+Code Example
+
+import Image from "next/image";
+
+export default function Home() {
+  return (
+    <div>
+      <h1>Image Component Example</h1>
+
+      {/* Optimized Image */}
+      <Image
+        src="/profile.jpg"   // stored in public/ folder
+        alt="Profile Picture"
+        width={300}
+        height={300}
+        priority   // loads immediately instead of lazy
+      />
+
+      {/* Remote Image */}
+      <Image
+        src="https://picsum.photos/600/400"
+        alt="Random Image"
+        width={600}
+        height={400}
+      />
+    </div>
+  );
+}
+
+👉 Images are automatically resized, optimized, and responsive.
+
+
+---
+
+Interview Q&A
+
+Q: What is the Image component in Next.js?
+
+Answer: It is a Next.js built-in component that optimizes images for performance by resizing, lazy loading, and serving modern formats automatically.
+
+
+Q: How is <Image> better than <img>?
+
+Answer: Unlike <img>, <Image> provides automatic optimization, lazy loading, responsive resizing, and WebP conversion.
+
+
+Q: Can we use external image URLs in <Image>?
+
+Answer: Yes, but you must configure allowed domains in next.config.js:
+
+
+module.exports = {
+  images: {
+    domains: ['picsum.photos', 'example.com'],
+  },
+}
+
+
+---
+
+👉 Next up is 14. Client Side and Server Side components used together in a single page.
+Do you want me to continue with that one?
+
+Great 🚀 let’s move to the next one.
+
+
+---
+
+14. Client Side and Server Side Components Together in a Single Page
+
+Definition
+
+In Next.js 13+ (App Router), you can use Server Components (default) and Client Components together on the same page.
+
+
+---
+
+Simple Explanation
+
+Server Components → run on the server, never sent to client as JavaScript (better performance, SEO).
+
+Client Components → run in the browser, needed for interactivity (buttons, forms, hooks).
+
+✅ A page can mix both:
+
+By default, everything is a Server Component.
+
+To use Client features, add "use client"; at the top of a file.
+
+
+
+
+---
+
+Code Example
+
+// app/page.js (Server Component by default)
+import ClientButton from "./ClientButton";
+
+export default function Home() {
+  return (
+    <div>
+      <h1>Server + Client Component Example</h1>
+      <p>This text is rendered on the server (SEO friendly).</p>
+      
+      {/* Importing a Client Component */}
+      <ClientButton />
+    </div>
+  );
+}
+
+// app/ClientButton.js
+"use client";  // makes this file a client component
+import { useState } from "react";
+
+export default function ClientButton() {
+  const [count, setCount] = useState(0);
+  return (
+    <button onClick={() => setCount(count + 1)}>
+      Clicked {count} times
+    </button>
+  );
+}
+
+👉 Here, the Home page is rendered on the server, but the button interaction works on the client.
+
+
+---
+
+Interview Q&A
+
+Q: Can we use Client and Server components together in Next.js?
+
+Answer: Yes. By default, all components are Server Components, but you can mark specific ones with "use client" for interactivity. Both can be combined in a single page.
+
+
+Q: Why would we mix Server and Client components?
+
+Answer:
+
+Server Components → good for static/SEO-friendly content.
+
+Client Components → good for interactive features (forms, buttons, modals).
+
+Mixing them gives best performance + interactivity.
+
+
+
+Q: Example scenario?
+
+A blog post page:
+
+Content (Server Component).
+
+"Like" button or comment form (Client Component).
+
+
+
+
+---
+
+👉 Next up is 15. Can events be used in Server Components?
+Do you want me to continue with that one?
+
+Awesome 🌟 let’s cover the last one.
+
+
+---
+
+15. Can Events Be Used in Server Components?
+
+Definition
+
+No, events (like onClick, onChange, etc.) cannot be used in Server Components because Server Components are rendered only on the server and don’t include client-side JavaScript.
+
+
+---
+
+Simple Explanation
+
+Server Component: Renders HTML on the server → no browser interactivity.
+
+Client Component: Runs in the browser → supports React events (onClick, onChange, etc.).
+
+If you need events → you must move that part into a Client Component using "use client".
+
+
+
+---
+
+Code Example
+
+❌ Invalid in Server Component:
+
+// app/page.js (Server Component by default)
+export default function Home() {
+  return (
+    <button onClick={() => alert("Hello!")}>
+      Click Me
+    </button>
+  );
+}
+// ❌ This won't work because events are not supported in Server Components
+
+✅ Correct Way:
+
+// app/page.js
+import ClientButton from "./ClientButton";
+
+export default function Home() {
+  return (
+    <div>
+      <h1>Server Component</h1>
+      <ClientButton />
+    </div>
+  );
+}
+
+// app/ClientButton.js
+"use client"; // makes it a client component
+export default function ClientButton() {
+  return (
+    <button onClick={() => alert("Hello!")}>
+      Click Me
+    </button>
+  );
+}
+
+
+---
+
+Interview Q&A
+
+Q: Can we use events in Server Components?
+
+Answer: No. Server Components do not include client-side JavaScript, so events like onClick won’t work.
+
+
+Q: How do we handle interactivity in a Server Component page?
+
+Answer: Move interactive parts into a Client Component (by adding "use client" at the top of the file).
+
+
+Q: Why does Next.js restrict events in Server Components?
+
+Answer: To reduce JavaScript bundle size, improve performance, and keep Server Components focused on rendering content.
+
+
+
+---
+
+✅ That completes your full list of Next.js concepts with definitions, explanations, code, and interview Q&A 🎉
+
+Do you want me to now create a short summarized cheat sheet of all these topics for quick interview revision?
+
