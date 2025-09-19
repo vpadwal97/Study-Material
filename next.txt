@@ -731,22 +731,16 @@ Perfect 🚀 let’s continue.
 ---
 
 8. What is Server-Side Generation Props (SSG) in Next.js?
-
 (Correct term is Static Site Generation (SSG), sometimes people mistakenly say “Server-Side Generation”).
-
 Definition
-
 Static Site Generation (SSG) in Next.js means pre-rendering pages at build time into static HTML, which can then be reused for all requests. It uses getStaticProps (and optionally getStaticPaths for dynamic routes).
 
 
 ---
 
 Simple Explanation
-
 The HTML is generated once when you build the app (next build).
-
 It’s very fast because the same HTML is served to every user.
-
 Best for pages that don’t change often (blogs, product catalogs, docs).
 
 
@@ -754,9 +748,7 @@ Best for pages that don’t change often (blogs, product catalogs, docs).
 ---
 
 Code Example
-
 Pages Router (Next.js 12 style):
-
 // pages/blog.js
 export default function BlogPage({ posts }) {
   return (
@@ -775,23 +767,19 @@ export default function BlogPage({ posts }) {
 export async function getStaticProps() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=5");
   const data = await res.json();
-
   return {
     props: { posts: data }, // passed to component
   };
 }
 
 👉 HTML generated at build time.
-
 App Router (Next.js 13+ style):
-
 // app/blog/page.js
 export default async function BlogPage() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=5", {
     cache: "force-cache", // default in App Router → SSG
   });
   const data = await res.json();
-
   return (
     <div>
       <h1>Static Blog</h1>
@@ -810,52 +798,40 @@ export default async function BlogPage() {
 Interview Q&A
 
 Q: What is SSG in Next.js?
-
 Answer: SSG is pre-rendering pages at build time into static HTML, which is reused for all requests.
-
 Simple Explanation: HTML is created once when building, then served super fast.
 
 
 Q: When should you use SSG?
-
 Answer: Use SSG when data doesn’t change often, e.g., blogs, docs, marketing pages.
 
 
 Q: Difference between SSG and SSR?
-
 Answer:
-
 SSG: Generated once at build time → faster, cached.
-
 SSR: Generated at each request → slower, always fresh.
 
 
 
 Q: How do you handle dynamic routes in SSG?
-
 Answer: Use getStaticPaths with getStaticProps.
 
 
 Example:
-
 // pages/posts/[id].js
 export default function Post({ post }) {
   return <h1>{post.title}</h1>;
 }
-
 export async function getStaticPaths() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=3");
   const posts = await res.json();
-
   const paths = posts.map((p) => ({ params: { id: p.id.toString() } }));
-
   return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params }) {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`);
   const post = await res.json();
-
   return { props: { post } };
 }
 
