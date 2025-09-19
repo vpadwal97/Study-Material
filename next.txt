@@ -1033,3 +1033,115 @@ Answer: ISR is useful for content that changes occasionally but doesn’t need t
 
 👉 Next up is 11. Middleware in Next.js.
 Shall I continue with that?
+
+
+
+
+
+
+Nice ⚡ let’s move on.
+
+
+---
+
+11. Middleware in Next.js
+
+Definition
+
+Middleware in Next.js is code that runs before a request is completed. It sits between the request and the response, allowing you to modify requests, responses, or redirect users based on conditions.
+
+
+---
+
+Simple Explanation
+
+Middleware works like a gatekeeper.
+
+Example uses:
+
+Authentication (redirect if not logged in).
+
+Role-based access control (admin vs user).
+
+Redirect based on country/language.
+
+Logging or analytics.
+
+
+Middleware runs on the Edge Runtime (faster, closer to user).
+
+
+
+---
+
+Code Example
+
+Example: Redirect user if not logged in
+
+// middleware.js (at project root or inside /app)
+import { NextResponse } from "next/server";
+
+export function middleware(req) {
+  const isLoggedIn = req.cookies.get("token"); // check cookie
+  
+  if (!isLoggedIn && req.nextUrl.pathname.startsWith("/dashboard")) {
+    return NextResponse.redirect(new URL("/login", req.url));
+  }
+  
+  return NextResponse.next();
+}
+
+// Apply to specific routes
+export const config = {
+  matcher: ["/dashboard/:path*"], 
+};
+
+👉 If a user tries /dashboard without a token, they’ll be redirected to /login.
+
+
+---
+
+Interview Q&A
+
+Q: What is middleware in Next.js?
+
+Answer: Middleware is code that runs before a request is processed, allowing us to modify requests/responses, redirect, or enforce conditions.
+
+Simple Explanation: Middleware is like a guard that checks requests before sending a page.
+
+
+Q: Where does middleware run in Next.js?
+
+Answer: Middleware runs on the Edge Runtime, which is faster and closer to users compared to traditional Node.js servers.
+
+
+Q: Common use cases for middleware?
+
+Answer:
+
+Authentication / Authorization
+
+Redirecting users
+
+Feature flags
+
+Geo/location-based routing
+
+
+
+Q: How is middleware different from API routes?
+
+Answer:
+
+Middleware: Runs before rendering a page, modifies requests/responses.
+
+API Routes: Handles backend logic like fetching data or updating DB.
+
+
+
+
+---
+
+👉 Next up is 12. Script Component in Next.js.
+Do you want me to continue with that?
+
