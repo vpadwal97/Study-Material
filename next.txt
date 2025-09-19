@@ -840,3 +840,102 @@ export async function getStaticProps({ params }) {
 
 👉 Next up is 9. What is Client-Side Rendering (CSR) Props?
 Want me to continue in the same structured way?
+
+
+
+
+Great 👍 let’s go ahead.
+
+
+---
+
+9. What is Client-Side Rendering (CSR) in Next.js?
+
+Definition
+
+Client-Side Rendering (CSR) in Next.js means the page is rendered in the browser using JavaScript after the initial HTML loads. The server sends a minimal HTML shell, and React hydrates/fills it with content.
+
+
+---
+
+Simple Explanation
+
+This is the default behavior of React apps.
+
+The browser loads the page → runs JS → fetches data → updates UI.
+
+In Next.js, you can still use CSR inside components (e.g., using useEffect).
+
+Good for pages that rely on user interaction or don’t need SEO.
+
+
+
+---
+
+Code Example
+
+CSR Data Fetching with useEffect:
+
+"use client"; // only for Next.js 13 App Router
+
+import { useEffect, useState } from "react";
+
+export default function UsersPage() {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then((res) => res.json())
+      .then((data) => setUsers(data));
+  }, []);
+
+  return (
+    <div>
+      <h1>Client-Side Rendered Users</h1>
+      <ul>
+        {users.map((u) => (
+          <li key={u.id}>{u.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+👉 The initial HTML is empty → browser fetches and fills data after render.
+
+
+---
+
+Interview Q&A
+
+Q: What is CSR in Next.js?
+
+Answer: CSR means rendering happens in the browser after the page loads. Data is fetched on the client side (using hooks like useEffect).
+
+Simple Explanation: Browser loads a blank page first, then React fills content with JS.
+
+
+Q: When should you use CSR in Next.js?
+
+Answer: Use CSR when data is not important for SEO, like dashboards, chat apps, or user-specific content.
+
+
+Q: How does CSR differ from SSR/SSG?
+
+Answer:
+
+CSR: Rendered in the browser → slower initial load, not SEO friendly.
+
+SSR: Rendered on server per request → SEO friendly, slower than SSG.
+
+SSG: Rendered at build time → fastest, SEO friendly.
+
+
+
+
+---
+
+👉 Next topic is 10. What is ISR (Incremental Static Regeneration)?
+Do you want me to explain that next in the same format?
+
+ 
