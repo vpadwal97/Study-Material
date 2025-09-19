@@ -1123,31 +1123,24 @@ Do you want me to continue with that?
 
 
 Awesome 💡 let’s continue.
-
-
 ---
 
+
+
+
 12. Script Component in Next.js
-
 Definition
-
 The <Script> component in Next.js is a special component used to load third-party scripts (like Google Analytics, chat widgets, ads) efficiently with different loading strategies.
 
 
 ---
 
 Simple Explanation
-
 Normally, adding <script> tags in HTML can block rendering.
-
 Next.js <Script> lets you control when and how the script loads.
-
 Strategies available:
-
 beforeInteractive → load before page is interactive (critical scripts).
-
 afterInteractive → load right after the page becomes interactive (default).
-
 lazyOnload → load when the browser is idle.
 
 
@@ -1156,20 +1149,16 @@ lazyOnload → load when the browser is idle.
 ---
 
 Code Example
-
 import Script from "next/script";
-
 export default function Home() {
   return (
     <div>
       <h1>Script Component Example</h1>
-
       {/* Load Google Analytics after the page is interactive */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
         strategy="afterInteractive"
       />
-
       {/* Inline script */}
       <Script id="google-analytics" strategy="afterInteractive">
         {`
@@ -1182,7 +1171,6 @@ export default function Home() {
     </div>
   );
 }
-
 👉 This ensures scripts don’t block rendering and improve performance/SEO.
 
 
@@ -1191,24 +1179,18 @@ export default function Home() {
 Interview Q&A
 
 Q: What is the Script component in Next.js?
-
 Answer: <Script> is a Next.js component that helps load external scripts efficiently with control over when they are executed.
 
 
 Q: What are the strategies in the Script component?
-
 Answer:
-
 beforeInteractive: Loads script before page becomes interactive.
-
 afterInteractive (default): Loads right after page is interactive.
-
 lazyOnload: Loads script when browser is idle.
 
 
 
 Q: Why should we use <Script> instead of a normal <script> tag?
-
 Answer: Because <Script> in Next.js optimizes performance and ensures scripts load without blocking page rendering.
 
 
@@ -1217,5 +1199,3 @@ Answer: Because <Script> in Next.js optimizes performance and ensures scripts lo
 
 👉 Next up is 13. Image Component in Next.js.
 Do you want me to continue with that in the same structured way?
-
- 
