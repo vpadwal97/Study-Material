@@ -395,3 +395,107 @@ app/dashboard/settings/page.js → /dashboard/settings
 
 👉 Next up: 6. What is Pre-rendering in Next.js?
 Do you want me to explain that next in the same structured way?
+Great 🔥 let’s continue.
+
+
+---
+
+6. What is Pre-rendering in Next.js?
+
+Definition
+
+Pre-rendering in Next.js means generating the HTML of a page in advance (on the server) instead of waiting for the browser (client-side) to render it with JavaScript.
+
+
+---
+
+Simple Explanation
+
+In plain React apps (CSR), pages load as empty HTML + JS, and the browser fills content.
+
+In Next.js, pages can be pre-rendered → so search engines and users get the HTML content immediately.
+
+There are two types:
+
+1. Static Generation (SSG) → pre-render at build time.
+
+
+2. Server-Side Rendering (SSR) → pre-render at request time.
+
+
+
+
+
+---
+
+Code Example
+
+Static Generation (SSG) Example:
+
+// pages/index.js
+export default function Home({ data }) {
+  return <h1>{data.message}</h1>;
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      data: { message: "Hello from SSG" },
+    },
+  };
+}
+
+👉 Page is pre-rendered at build time.
+
+Server-Side Rendering (SSR) Example:
+
+// pages/index.js
+export default function Home({ data }) {
+  return <h1>{data.message}</h1>;
+}
+
+export async function getServerSideProps() {
+  return {
+    props: {
+      data: { message: "Hello from SSR" },
+    },
+  };
+}
+
+👉 Page is pre-rendered at each request.
+
+
+---
+
+Interview Q&A
+
+Q: What is pre-rendering in Next.js?
+
+Answer: Pre-rendering is the process of generating HTML for a page in advance on the server.
+
+Simple Explanation: Instead of sending an empty page and waiting for JS, Next.js sends ready HTML.
+
+
+Q: What are the two types of pre-rendering in Next.js?
+
+Answer:
+
+1. Static Generation (SSG): HTML is generated at build time.
+
+
+2. Server-Side Rendering (SSR): HTML is generated at request time.
+
+
+
+
+Q: Why is pre-rendering important for SEO?
+
+Answer: Search engines can crawl HTML content immediately, improving ranking and visibility.
+
+
+
+---
+
+👉 Next topic is 7. What is Server-Side Props (SSR)?
+Should I continue with that in the same structured way?
+
