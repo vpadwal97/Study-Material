@@ -629,3 +629,113 @@ Answer: Search engines can crawl HTML content immediately, improving ranking and
 
 👉 Next topic is 7. What is Server-Side Props (SSR)?
 Should I continue with that in the same structured way?
+
+Perfect 🙌 let’s dive in.
+
+
+---
+
+7. What is Server-Side Props (SSR) in Next.js?
+
+Definition
+
+Server-Side Rendering (SSR) in Next.js means generating the HTML for a page on the server at every request, using getServerSideProps.
+
+
+---
+
+Simple Explanation
+
+When a user requests a page, Next.js runs the server-side code, fetches data (like from an API or DB), and sends the ready HTML to the client.
+
+This ensures always fresh data, but it can be slower than static generation because the server must render on every request.
+
+
+
+---
+
+Code Example
+
+Pages Router (Next.js 12 style):
+
+// pages/news.js
+export default function NewsPage({ articles }) {
+  return (
+    <div>
+      <h1>Latest News</h1>
+      <ul>
+        {articles.map((a, i) => (
+          <li key={i}>{a.title}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+// SSR function
+export async function getServerSideProps() {
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=5");
+  const data = await res.json();
+
+  return {
+    props: { articles: data },
+  };
+}
+
+👉 Each time you visit /news, the server fetches fresh data.
+
+App Router (Next.js 13+):
+
+// app/news/page.js
+export default async function NewsPage() {
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=5", {
+    cache: "no-store", // ensures SSR (no caching)
+  });
+  const data = await res.json();
+
+  return (
+    <div>
+      <h1>Latest News</h1>
+      <ul>
+        {data.map((a) => (
+          <li key={a.id}>{a.title}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+
+---
+
+Interview Q&A
+
+Q: What is SSR in Next.js?
+
+Answer: SSR means rendering the page’s HTML on the server at request time using getServerSideProps or cache: "no-store" in App Router.
+
+Simple Explanation: Page is generated fresh on each request, so the data is always up to date.
+
+
+Q: When should you use SSR?
+
+Answer: Use SSR when data must always be fresh, e.g., stock prices, user dashboards, real-time feeds.
+
+
+Q: Difference between SSR and SSG?
+
+Answer:
+
+SSR: HTML generated on every request (slower, fresh data).
+
+SSG: HTML generated once at build time (faster, cached data).
+
+
+
+
+---
+
+👉 Next up is 8. What is Server-Side Generation Props (SSG)?
+Do you want me to go ahead with that in the same style?
+
+
