@@ -46,7 +46,7 @@ axios : third party library , it automativally transforms the data to json http 
 
 What is the difference between slice, splice, and split?
 slice(start,end) : used on string and array,  returns a new array/string 
-splice(start,deletCount,...itoms) : works on array used to add/replace/remove element in an array
+splice(start,deletCount,...itoms) : works on array used to add/replace/remove element in an array , it modifies original array 
 split(pattern,limit) : works on string returns new array with limit
 
 What is the difference between preventDefault() and stopPropagation()?
@@ -2268,7 +2268,7 @@ infer : its a keyword in typescript is used inside conditional type to capture a
 
 any : it disables the type checking for a variable meaning the variable can hold any value and type scrypt will not force type safety
 
-unknown : its asme as any , meaning a variable can hold any value but we have to check its type before using it ,its enforce type safety 
+unknown : its same as any , meaning a variable can hold any value but we have to check its type before using it ,its enforce type safety 
 
 never : its commenly used with functions that never return ,it represent the value that never occure or code path that should be unreachable . like error throwing or infinite loop.
 
@@ -2277,15 +2277,15 @@ array of objec : obj[] (short hend) | Array<obj> (generic form)
 Generics : provide a way to write reusable code that work with different types while maintaining type safety
 const getLastElement = <T>(array: T[]): T | undefined => {    return array[array.length - 1];};
 
-Void Function in : its is used for the functin that do not return any value , it tells that the function will perform some value but do  not return any value
+Void Function in : its is used for the functin that do not return any value , it tells that the function will perform some action but do not return any value
 
-Return Type Function: its a function in ts which explicityle defines what value the function will return 
+Return Type Function: its a function in typescript which explicityle defines what value the function will return 
 
 Tuples : are fixed length array with known types , where each element have a specific type.
 type UserInfo = [string, number, boolean];
 
 
-enum : enumeration in ts is a way of defining set of name constants that can be string or number values. it make code more redable , type safe 
+enum : enumeration in typescript is a way of defining set of name constants that can be string or number values. it make code more redable , type safe 
 enum Direction {North, East, South, West};
 
 Function Signature : defines the parameter type and return type of a function without including the implementation
@@ -2359,6 +2359,9 @@ user.greet(); // Hello, my name is John
 🎤 Interview Q&A
 Q1: What is an interface in TypeScript?
 👉 An interface is a way to define the contract for an object, specifying what properties and methods it should have.
+
+type alias : - In TypeScript, a type alias provides a new name for an existing type.
+eg : - type UserName = string;
 
 Q2: Difference between interface and type?
 👉
@@ -2703,6 +2706,13 @@ console.log(result); // { name: "John", age: 30 }
 ✅ Next topic → 9. What is a void function in TypeScript?
 
 Do you want me to continue with void function?
+
+
+Utility types : are predefined generic types in typescript that help you transform create modify types.
+partial,required,readonly,
+
+
+
 
 You said:
 Yes
@@ -7369,6 +7379,35 @@ export default function ProductPage({ params }) {
 }
 Visiting /products/200 → Shows Product ID: 200.
 
+//Pages Router
+// pages/product/[slug].js
+import { useRouter } from 'next/router'
+
+export default function BlogPost() {
+  const router = useRouter()
+  const { slug } = router.query
+
+  return (
+    <div>
+      <h1>Product: {slug}</h1>
+      {/* Fetch post data based on slug */}
+    </div>
+  )
+}
+
+
+//App Router
+// app/product/[slug]/page.js
+export default function BlogPost({ params }) {
+  const { slug } = params
+
+  return (
+    <div>
+      <h1>Product: {slug}</h1>
+    </div>
+  )
+}
+
 
 
 ---
@@ -8202,9 +8241,25 @@ ISR: Page generated at build time, but updated periodically.
 Q: When should you use ISR?
 Answer: ISR is useful for content that changes occasionally but doesn’t need to be real-time, like blogs, product listings, news articles.
 
-
-
----
+|-------------------|------------------------------|------------------------------|-------------------------|-------------------------|
+| Rendering Method  | Build Generates              | Server Sends                 | Client Receives         | Hydration               |
+|-------------------|------------------------------|------------------------------|-------------------------|-------------------------|
+|                   | Static HTML shell            | Minimal HTML                 | JS downloads & executes |                         |
+| CSR (Client-Side) | JavaScript bundles           | JS bundles                   | API calls fetch data    | Full client-side render |
+|                   | No pre-rendered content      | Empty content div            | Renders content         |                         |
+|-------------------|------------------------------|------------------------------|-------------------------|-------------------------|
+|                   | Pre-built HTML files         | Pre-generated HTML           | Complete HTML content   |                         |
+| SSG (Static)      | JSON data files              | Static JSON data             | Instant display         | Light hydration         |
+|                   | Static assets                | No server processing         | JS hydrates             |                         |
+|-------------------|------------------------------|------------------------------|-------------------------|-------------------------|
+|                   | Some pre-built HTML          | Cached HTML if fresh         | Fast initial load       |                         |
+| ISR (Incremental) | Stale-while-revalidate logic | Regenerates if stale         | May see stale content   | Light hydration         |
+|                   | Cache management             | Background rebuild           | Background updates      |                         |
+|-------------------|------------------------------|------------------------------|-------------------------|-------------------------|
+|                   | Server bundles only          | Renders HTML on each request | Complete HTML on load   |                         |
+| SSR (Server-Side) | No pre-built HTML            | Fetches fresh data           | Fresh data each visit   | Full hydration          |
+|                   | API route handlers           | Dynamic content              | JS takes over           |                         |
+|-------------------|------------------------------|------------------------------|-------------------------|-------------------------|
 
 👉 Next up is 11. Middleware in Next.js.
 Shall I continue with that?
@@ -8623,3 +8678,21 @@ Answer: To reduce JavaScript bundle size, improve performance, and keep Server C
 
 Do you want me to now create a short summarized cheat sheet of all these topics for quick interview revision?
 
+
+Dynamic routes
+[folder]	Dynamic route segment // get slug
+[...folder]	Catch-all route segment // get all slugs
+[[...folder]]	Optional catch-all route segment // get all slugs if not undefined.
+
+
+Route Groups and private folders
+(folder)	Group routes without affecting routing // allow us to group routes excluded in the route path
+_folder	Opt folder and all child segments out of routing // exclude the folder and child files and folders from routing
+
+
+Parallel and Intercepted Routes
+@folder	Named slot
+(.)folder	Intercept same level
+(..)folder	Intercept one level above
+(..)(..)folder	Intercept two levels above
+(...)folder	Intercept from root
