@@ -121,9 +121,7 @@ console.log(big + 2n); // Works fine
 
 👉 Do you want me to continue with the next topic (Spread & Rest operator) in the same structured format?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Great 👍 let’s continue.
 
@@ -190,9 +188,7 @@ console.log(multiply(2, 3, 4)); // 24
 
 👉 Next topic is Closure. Want me to go ahead with the same format?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Perfect 👍 let’s move to the next one.
 
@@ -288,9 +284,7 @@ for (let i = 1; i <= 3; i++) {
 
 👉 Next topic is Hoisting. Do you want me to continue with the same structured format?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Awesome 👍 let’s dive into the next one.
 
@@ -363,9 +357,7 @@ Q4: Why do let and const throw ReferenceError if they’re hoisted?
 👉 Next topic is Anonymous Functions.
 Should I continue in the same structured style?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Perfect 🙌 Let’s go with the next one.
 
@@ -440,9 +432,7 @@ console.log(factorial(5)); // 120
 👉 Next topic is Arrow Functions.
 Do you want me to move on to that?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Awesome 🚀 let’s continue.
 
@@ -537,13 +527,14 @@ obj.normal(); // 10
 obj.arrow();  // undefined (or window/global in non-strict mode)
 
 
+Generator Functions are special functions in JavaScript that can be paused and resumed multiple times, allowing them to yield multiple values over time. They maintain their state between executions.
+
+
 👉 Next topic is Callback Functions.
 Shall I move on to that in the same style?
 
-You said:
+
 Yes
-Yes
-ChatGPT said:
 
 Perfect 🙌 let’s go ahead.
 
@@ -608,7 +599,7 @@ Asynchronous callback → Runs later (like in setTimeout, fetch).
 
 Q3: Why can callbacks cause “callback hell”?
 👉 Because deeply nested callbacks (one inside another) make code unreadable and hard to maintain.
-
+multiple nested callbacks make code difficult to read and maintain.
 Example of Callback Hell
 
 doStep1(function(result1) {
@@ -626,9 +617,7 @@ Q4: How to solve callback hell?
 👉 Next topic is Async & Await.
 Do you want me to continue with that in the same structured way?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Perfect 👍 let’s move to the next one.
 
@@ -732,9 +721,7 @@ show();
 👉 Next topic is Array Methods: map, reduce, forEach, filter, some, every.
 Shall I continue with that in the same structured style?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Perfect 👌 this one is very important for interviews. Let’s go step by step.
 
@@ -845,9 +832,7 @@ console.log(names); // ["Vishu", "Arjun"]
 👉 Next topic is Event Bubbling.
 Do you want me to continue with that in the same structured style?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Great 👍 let’s move on.
 
@@ -923,9 +908,7 @@ document.getElementById("parent").addEventListener("click", (e) => {
 👉 Next topic is Event Loop.
 Do you want me to continue with that in the same structured style?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Perfect 🚀 this one is super important for interviews.
 
@@ -1011,9 +994,7 @@ Event Loop → pushes tasks into stack when empty.
 👉 Next topic is ES6 Features.
 Do you want me to continue with that in the same structured way?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Great 🙌 let’s go with the next one.
 
@@ -1121,9 +1102,7 @@ console.log(nums); // {1, 2, 3} (removes duplicates)
 👉 Next topic is Optional Chaining (?.).
 Do you want me to continue with that in the same structured way?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Perfect 🙌 let’s go to the next one.
 
@@ -1202,9 +1181,7 @@ Q4: What is the difference between ?. (optional chaining) and || or ?? operators
 👉 Next up is Error Handling in JavaScript (try...catch, throw).
 Do you want me to continue with that?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Great 👍 let’s move on.
 
@@ -1314,9 +1291,7 @@ getData();
 👉 Next up is LocalStorage in JavaScript.
 Shall I continue with that?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Perfect 👍 let’s move on.
 
@@ -1390,9 +1365,7 @@ Q4: What is the storage limit of localStorage?
 👉 Next up is SessionStorage in JavaScript.
 Do you want me to continue with that in the same structured way?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Great 🚀 let’s continue.
 
@@ -1463,9 +1436,7 @@ Q4: What is the storage limit of sessionStorage?
 👉 Next up is Higher Order Functions in JavaScript.
 Shall I continue with that?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Perfect 🙌 let’s move on.
 
@@ -1539,9 +1510,7 @@ HOF: The function that accepts a callback or returns a function.
 👉 Next up is Prototype in JavaScript.
 Do you want me to continue with that?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Great 🚀 let’s continue.
 
@@ -1613,9 +1582,7 @@ Q4: Why do we use prototypes instead of defining methods directly inside constru
 👉 Next up is Debouncing in JavaScript.
 Do you want me to continue?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Awesome 🙌 let’s move on.
 
@@ -1730,9 +1697,7 @@ Throttling → Executes function at regular intervals, regardless of how many ti
 👉 Next up is Throttling in JavaScript.
 Shall I continue?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Perfect 🚀 let’s go ahead.
 
@@ -1804,9 +1769,7 @@ Q3: Give a real-world example of throttling.
 👉 Next up is Truthy and Falsy values in JavaScript.
 Want me to continue?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Great 👍 let’s continue!
 
@@ -1884,9 +1847,7 @@ Q4: Is "" (empty string) the same as " " (string with space)?
 👉 Next up is Difference between call(), apply(), and bind().
 Should I go ahead?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Awesome 🚀 Let’s move to the next topic.
 
@@ -1956,9 +1917,7 @@ Q4: Which method would you use for partial function application?
 👉 Next up is Object Destructuring in JavaScript.
 Do you want me to continue?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Perfect 👍 let’s continue!
 
@@ -2023,9 +1982,7 @@ console.log(email); // abc@gmail.com
 👉 Next up is Array Destructuring.
 Should I go ahead?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Great 🙌 let’s move to the next one!
 
@@ -2094,9 +2051,7 @@ console.log(x, y); // 10 5
 👉 Next topic: Difference between null and undefined.
 Shall I continue?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Perfect 👌 let’s continue!
 
@@ -2150,9 +2105,7 @@ user = null; // explicitly cleared
 👉 Next topic: Shallow Copy vs Deep Copy.
 Shall I explain that one?
 
-You said:
-Yes
-ChatGPT said:
+
 
 Great! 🚀 Let’s cover the last one from your list.
 
@@ -2245,7 +2198,6 @@ signature function type
 
 Answer all the above questions with standard definition and there simple explanation and code eg one question at a time also provide interview questions on the topic with  standard definition answers to the interview questions and there simple explanation and code
 
-ChatGPT said:
 Perfect 👍 Let’s go step by step. I’ll explain each TypeScript concept in this order:
 
 Standard definition (formal explanation)
@@ -2327,9 +2279,7 @@ printId("abc123"); // string
 printId(101);      // number
 Would you like me to continue to 2. Interface next in the same structured way (definition → explanation → code → interview Q&A), or do you prefer me to give all answers in one big list?
 
-You said:
-Yes
-ChatGPT said:
+
 Great 👍 Let’s continue with the same structured way.
 We already finished 1. Union. Now moving to 2. Interface.
 
@@ -2385,9 +2335,7 @@ const pet: Dog = { name: "Rocky", breed: "Labrador" };
 ✅ Next topic is 3. infer in TypeScript.
 Do you want me to continue right away with infer, or pause so you can revise Union + Interface first?
 
-You said:
-Yes
-ChatGPT said:
+
 Perfect 👍 Let's move to the next topic: infer in TypeScript
 
 3. infer in TypeScript
@@ -2426,9 +2374,7 @@ type B = FirstElement<[]>; // never
 ✅ Next, we’ll cover 4. any in TypeScript.
 Do you want me to continue?
 
-You said:
-Yes
-ChatGPT said:
+
 Great 🚀 Let’s move to the next topic: any in TypeScript
 
 4. any in TypeScript
@@ -2470,7 +2416,6 @@ Would you like me to continue to unknown now?
 
 You said:
 Yea
-ChatGPT said:
 Awesome 🙌 let’s go with 5. unknown in TypeScript
 
 5. unknown in TypeScript
@@ -2524,9 +2469,7 @@ console.log(processData("hello")); // HELLO
 
 Do you want me to continue with never?
 
-You said:
-Yes 
-ChatGPT said:
+ 
 Perfect 🚀 Let’s continue with 6. never in TypeScript
 
 6. never in TypeScript
@@ -2594,9 +2537,7 @@ function fail(): never {
 
 Should I go ahead with Array of Objects?
 
-You said:
-Yes
-ChatGPT said:
+
 Perfect 👍 Let’s move on to 7. Array of Objects in TypeScript
 
 7. Array of Objects in TypeScript
@@ -2654,9 +2595,7 @@ Array<User> → generic form
 
 Should I continue with Generics?
 
-You said:
-Yes
-ChatGPT said:
+
 Awesome 🙌 Let’s go with 8. Generic type <T> in TypeScript
 
 8. Generic type <T> in TypeScript
@@ -2714,9 +2653,7 @@ partial,required,readonly,
 
 
 
-You said:
-Yes
-ChatGPT said:
+
 Perfect 👍 Let’s move on to 9. What is a void function in TypeScript?
 
 9. Void Function in TypeScript
@@ -2755,9 +2692,7 @@ function notifyUser(): void {
 
 Shall I continue with return type function?
 
-You said:
-Yes
-ChatGPT said:
+
 Great 🚀 Let’s continue with 10. What is a return type function in TypeScript?
 
 10. Return Type Function in TypeScript
@@ -2813,9 +2748,7 @@ function getLength(str: string): number {
 
 Do you want me to continue with Tuples?
 
-You said:
-Yes
-ChatGPT said:
+
 Perfect 🙌 Let’s go with 11. Tuples in TypeScript
 
 11. Tuples in TypeScript
@@ -2879,9 +2812,7 @@ console.log(`ID: ${employee[0]}, Name: ${employee[1]}, Role: ${employee[2]}`);
 
 Do you want me to continue with Enums?
 
-You said:
-Yes with standard definition for interview 
-ChatGPT said:
+ with standard definition for interview 
 Perfect 👍 Let’s move to 12. Enum in TypeScript with a standard interview-style definition.
 
 12. Enum in TypeScript
@@ -2963,9 +2894,7 @@ checkStatus(OrderStatus.Shipped); // Order has been shipped.
 
 Would you like me to continue with function signature?
 
-You said:
-Yes
-ChatGPT said:
+
 Perfect 🙌 Let’s wrap up with the last one → 13. Function Signature in TypeScript
 
 13. Function Signature in TypeScript
@@ -3126,14 +3055,14 @@ Explanation with Examples
 JSX lets you write HTML inside JavaScript.
 
 jsx
-￼Copy code
+Copy code
 function Hello() {
   return <h1>Hello, World!</h1>;
 }
 Without JSX, the same code would look like:
 
 jsx
-￼Copy code
+Copy code
 function Hello() {
   return React.createElement("h1", null, "Hello, World!");
 }
@@ -3141,7 +3070,7 @@ function Hello() {
 React apps are built using components (reusable UI parts).
 
 jsx
-￼Copy code
+Copy code
 function Header() {
   return <h2>This is Header</h2>;
 }
@@ -3158,7 +3087,7 @@ function App() {
 React uses a Virtual DOM to update only the changed parts instead of reloading the entire page → improves performance.
 
 jsx
-￼Copy code
+Copy code
 // Example: Changing a state updates only specific element
 function Counter() {
   const [count, setCount] = React.useState(0);
@@ -3175,7 +3104,7 @@ Only the <h2> updates, not the whole page.
 Data flows from parent → child only (unidirectional).
 
 jsx
-￼Copy code
+Copy code
 function Child({ name }) {
   return <h2>Hello {name}</h2>;
 }
@@ -3187,7 +3116,7 @@ function Parent() {
 Hooks let you use state & lifecycle in functional components.
 
 jsx
-￼Copy code
+Copy code
 function Example() {
   const [text, setText] = React.useState("Hello");
   return (
@@ -3201,7 +3130,7 @@ function Example() {
 Used for routing in Single Page Applications.
 
 jsx
-￼Copy code
+Copy code
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
 function Home() {
@@ -3234,7 +3163,7 @@ A: To improve performance. Instead of re-rendering the whole page, React updates
 👉 Example:
 
 jsx
-￼Copy code
+Copy code
 const [count, setCount] = React.useState(0);
 // Only updates <h1> on state change, not whole DOM
 <h1>{count}</h1>
@@ -3244,7 +3173,7 @@ A: Data flows in one direction, from parent to child. Child cannot directly modi
 👉 Example:
 
 jsx
-￼Copy code
+Copy code
 function Child({ value }) {
   return <h2>{value}</h2>;
 }
@@ -3257,22 +3186,12 @@ Real DOM	Virtual DOM
 Updates entire UI	Updates only changed elements
 Slower	Faster
 Direct manipulation of HTML	Abstraction in memory
-￼
+
 ⚡ That covers Key Features of React.
 
 👉 Do you want me to continue with the next topic ("What is Component?") in the same structured way?
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Yes
-￼
-￼
-ChatGPT said:
+
 Great 👍 Let’s move to the next topic: "What is Component?"
 
 🔹 What is Component in React?
@@ -3290,7 +3209,7 @@ Class Component – ES6 class that extends React.Component (older style).
 Explanation with Code Examples
 1. Functional Component (Modern way ✅)
 jsx
-￼Copy code
+Copy code
 function Welcome() {
   return <h1>Hello, I am a Functional Component</h1>;
 }
@@ -3304,7 +3223,7 @@ function App() {
 }
 2. Functional Component with Props
 jsx
-￼Copy code
+Copy code
 function Greeting({ name }) {
   return <h2>Hello, {name}</h2>;
 }
@@ -3319,12 +3238,12 @@ function App() {
 }
 👉 Output:
 
-￼Copy code
+Copy code
 Hello, Vishu
 Hello, Arjun
 3. Class Component (Older style)
 jsx
-￼Copy code
+Copy code
 import React, { Component } from "react";
 
 class Welcome extends Component {
@@ -3338,7 +3257,7 @@ function App() {
 }
 4. Component with State (Functional + useState)
 jsx
-￼Copy code
+Copy code
 function Counter() {
   const [count, setCount] = React.useState(0);
   
@@ -3351,7 +3270,7 @@ function Counter() {
 }
 5. Nested Components
 jsx
-￼Copy code
+Copy code
 function Header() {
   return <h1>Header</h1>;
 }
@@ -3377,12 +3296,12 @@ Functional Component	Class Component
 Uses plain JavaScript functions	Uses ES6 classes
 Uses hooks (useState, useEffect) for state & lifecycle	Uses this.state and lifecycle methods
 Simpler, preferred in modern React	Older, less used after Hooks
-￼
+
 Q: Can components be reused?
 A: Yes, components are reusable. Example:
 
 jsx
-￼Copy code
+Copy code
 function Button({ text }) {
   return <button>{text}</button>;
 }
@@ -3399,7 +3318,7 @@ Q: How do you pass data to a component?
 A: Using props.
 
 jsx
-￼Copy code
+Copy code
 function User({ name }) {
   return <p>User: {name}</p>;
 }
@@ -3410,17 +3329,7 @@ function App() {
 
 👉 Should I continue with the next topic: React Current Version (and its features)?
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Yes
-￼
-￼
-ChatGPT said:
+
 Here’s the next topic covered in the structured format you requested—“React Current Version”—with definitions, explanation, code examples, and interview questions:
 
 React Current Version
@@ -3470,11 +3379,11 @@ npmjs.com
 
 Code Example: Installing and Using React 19.1.1
 bash
-￼Copy code
+Copy code
 # Install using npm
 npm install react@latest react-dom@latest
 jsx
-￼Copy code
+Copy code
 // index.js
 import React from 'react';
 import { createRoot } from 'react-dom/client';
@@ -3485,7 +3394,7 @@ root.render(<App />);
 In your App.js, you can now leverage React 19 features, such as:
 
 jsx
-￼Copy code
+Copy code
 import { useOptimistic, useActionState } from 'react';
 
 function Example() {
@@ -3530,7 +3439,7 @@ GitHub
 Q3 (Coding): Show how to optimistically update a counter using React 19's useOptimistic hook.
 
 jsx
-￼Copy code
+Copy code
 import React, { useOptimistic } from 'react';
 
 function Counter() {
@@ -3569,20 +3478,19 @@ That covers React Current Version thoroughly—definitions, rundown of new featu
 
 Ready to move on to the next topic? How about we tackle “What is React JS?” next?
 
-￼
-￼
-￼
-￼
-￼
-￼
-￼
-￼
+
+
+
+
+
+
+
+
 Sources
 You said:
 Ok but before moving to next also provide the features and there explanations for 18 in deep then continue with nixt topics 
-￼
-￼
-ChatGPT said:
+
+
 Perfect 👍 let’s do this in sequence.
 We already covered React 19 (latest). Now I’ll go deep into React 18 features → with explanation, examples, and interview questions. Then we’ll move on to “What is React JS?”.
 
@@ -3602,7 +3510,7 @@ Now: React batches updates across promises, timeouts, async/await, or native eve
 Example:
 
 jsx
-￼Copy code
+Copy code
 import { useState } from "react";
 
 function Counter() {
@@ -3635,7 +3543,7 @@ Enables concurrent features → React can pause, resume, or drop renders to keep
 Example:
 
 jsx
-￼Copy code
+Copy code
 import { createRoot } from "react-dom/client";
 import App from "./App";
 
@@ -3647,7 +3555,7 @@ Marks updates as non-urgent (transitions) so urgent updates (like typing) stay f
 Example:
 
 jsx
-￼Copy code
+Copy code
 import { useState, startTransition } from "react";
 
 function Search() {
@@ -3682,7 +3590,7 @@ Great for search filters, large lists.
 Example:
 
 jsx
-￼Copy code
+Copy code
 import { useState, useDeferredValue } from "react";
 
 function Search({ items }) {
@@ -3706,7 +3614,7 @@ Generates unique IDs on both client & server → helps accessibility.
 Example:
 
 jsx
-￼Copy code
+Copy code
 import { useId } from "react";
 
 function Form() {
@@ -3727,7 +3635,7 @@ Now works for asynchronous data fetching.
 Example:
 
 jsx
-￼Copy code
+Copy code
 import React, { Suspense } from "react";
 
 const UserProfile = React.lazy(() => import("./UserProfile"));
@@ -3755,7 +3663,7 @@ Q2: Explain Automatic Batching with example.
 A: In React 18, state updates inside async calls are batched.
 
 jsx
-￼Copy code
+Copy code
 setTimeout(() => {
   setCount(c => c + 1);
   setText("Updated");
@@ -3770,11 +3678,11 @@ Q4: Difference between useDeferredValue and startTransition?
 startTransition	useDeferredValue
 Wraps updates to mark them non-urgent	Wraps values, deferring their updates
 Used when triggering updates	Used when consuming values
-￼
+
 Q5 (Coding): How would you generate unique IDs in React 18?
 
 jsx
-￼Copy code
+Copy code
 const id = useId();
 <label htmlFor={id}>Email</label>
 <input id={id} type="email" />
@@ -3782,17 +3690,7 @@ const id = useId();
 
 👉 Shall I now continue with the next topic: “What is React JS?”
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Yes
-￼
-￼
-ChatGPT said:
+
 Perfect 👍 Let’s continue with the next topic: “What is React JS?”
 
 🔹 What is React JS?
@@ -3818,13 +3716,13 @@ Large ecosystem → React Router, Redux, Next.js, etc.
 Code Examples
 1. Basic React Component
 jsx
-￼Copy code
+Copy code
 function App() {
   return <h1>Hello from React JS!</h1>;
 }
 2. React with Props
 jsx
-￼Copy code
+Copy code
 function Welcome({ name }) {
   return <h2>Welcome, {name}</h2>;
 }
@@ -3839,7 +3737,7 @@ function App() {
 }
 3. React with State
 jsx
-￼Copy code
+Copy code
 import { useState } from "react";
 
 function Counter() {
@@ -3854,7 +3752,7 @@ function Counter() {
 }
 4. Real-Life Example (Button Toggle)
 jsx
-￼Copy code
+Copy code
 import { useState } from "react";
 
 function ToggleButton() {
@@ -3879,14 +3777,14 @@ JavaScript	React
 Directly manipulates DOM	Uses Virtual DOM
 More code needed to update UI	Components & JSX make it easier
 Harder to manage state	Built-in hooks like useState
-￼
+
 Q4: Why is React so popular?
 A: Because of component reusability, fast performance (Virtual DOM), large ecosystem, and ease of use with JSX and hooks.
 
 Q5 (Coding): How would you create a button in React that changes text when clicked?
 
 jsx
-￼Copy code
+Copy code
 function App() {
   const [text, setText] = React.useState("Click Me");
 
@@ -3900,20 +3798,10 @@ function App() {
 
 👉 Shall I now continue with the next topic: “What is JSX?”
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Yes
-￼
-￼
-￼
+
+
 2/2
-￼
-ChatGPT said:
+
 Awesome 👍 let’s dive into the next topic: “What is JSX?”
 
 🔹 What is JSX?
@@ -3935,33 +3823,33 @@ Supports embedding expressions with {}
 Code Examples
 1. JSX Basic Example
 jsx
-￼Copy code
+Copy code
 function App() {
   return <h1>Hello, JSX!</h1>;
 }
 👉 Compiles to:
 
 jsx
-￼Copy code
+Copy code
 function App() {
   return React.createElement("h1", null, "Hello, JSX!");
 }
 2. JSX with JavaScript Expression
 jsx
-￼Copy code
+Copy code
 function App() {
   const name = "Vishu";
   return <h2>Hello, {name}</h2>;
 }
 3. JSX with Attributes
 jsx
-￼Copy code
+Copy code
 function App() {
   return <img src="logo.png" alt="Logo" width="200" />;
 }
 4. JSX with Inline Styles
 jsx
-￼Copy code
+Copy code
 function App() {
   const styleObj = { color: "blue", fontSize: "20px" };
   return <p style={styleObj}>Styled Text</p>;
@@ -3970,7 +3858,7 @@ function App() {
 ❌ Invalid:
 
 jsx
-￼Copy code
+Copy code
 function App() {
   return (
     <h1>Hello</h1>
@@ -3980,7 +3868,7 @@ function App() {
 ✅ Correct (wrapped in <div> or <> fragment):
 
 jsx
-￼Copy code
+Copy code
 function App() {
   return (
     <>
@@ -3991,7 +3879,7 @@ function App() {
 }
 6. Conditional Rendering in JSX
 jsx
-￼Copy code
+Copy code
 function App() {
   const isLoggedIn = true;
   return <h2>{isLoggedIn ? "Welcome Back!" : "Please Login"}</h2>;
@@ -4009,7 +3897,7 @@ A: Yes, React works without JSX by using React.createElement(), but JSX is prefe
 👉 Example without JSX:
 
 jsx
-￼Copy code
+Copy code
 function App() {
   return React.createElement("h1", { style: { color: "red" } }, "Hello World");
 }
@@ -4017,7 +3905,7 @@ Q4: Can we use JavaScript expressions inside JSX?
 A: Yes, we use {} to embed expressions.
 
 jsx
-￼Copy code
+Copy code
 const user = "Arjun";
 <p>{user.toUpperCase()}</p>
 Q5: What are the rules of JSX?
@@ -4033,7 +3921,7 @@ Expressions go inside {}
 Q6 (Coding): Write JSX that shows “Good Morning” if time < 12 else “Good Evening”.
 
 jsx
-￼Copy code
+Copy code
 function Greeting() {
   const hour = new Date().getHours();
   return <h2>{hour < 12 ? "Good Morning" : "Good Evening"}</h2>;
@@ -4042,17 +3930,7 @@ function Greeting() {
 
 👉 Do you want me to continue with the next topic: “What is Fragment?”
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Yes
-￼
-￼
-ChatGPT said:
+
 Perfect 👍 Let’s move to the next topic: “What is Fragment?”
 
 🔹 What is Fragment in React?
@@ -4072,7 +3950,7 @@ Improves performance slightly by not creating extra nodes.
 Code Examples
 1. Without Fragment ❌
 jsx
-￼Copy code
+Copy code
 function App() {
   return (
     <div>
@@ -4085,7 +3963,7 @@ function App() {
 
 2. With Fragment ✅
 jsx
-￼Copy code
+Copy code
 function App() {
   return (
     <>
@@ -4098,7 +3976,7 @@ function App() {
 
 3. Using <React.Fragment>
 jsx
-￼Copy code
+Copy code
 function App() {
   return (
     <React.Fragment>
@@ -4111,7 +3989,7 @@ function App() {
 Shorthand <> </> doesn’t support key, so use full <React.Fragment> when needed.
 
 jsx
-￼Copy code
+Copy code
 function List() {
   const items = ["A", "B", "C"];
   return (
@@ -4142,7 +4020,7 @@ A:
 Q4 (Coding): Show a component returning two <h2> elements without using a div.
 
 jsx
-￼Copy code
+Copy code
 function Titles() {
   return (
     <>
@@ -4158,17 +4036,7 @@ A: When using keys in lists or needing explicit readability.
 
 👉 Shall I continue with the next topic: “What is Virtual DOM?”
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Yes
-￼
-￼
-ChatGPT said:
+
 Great 🚀 Let’s move on to the next topic: “What is Virtual DOM?”
 
 🔹 What is Virtual DOM?
@@ -4188,7 +4056,7 @@ Better UX → Smooth, responsive apps.
 Code Examples
 1. Without Virtual DOM (Plain JS)
 html
-￼Copy code
+Copy code
 <div id="app"></div>
 <script>
   const app = document.getElementById("app");
@@ -4209,7 +4077,7 @@ html
 
 2. With Virtual DOM (React Example)
 jsx
-￼Copy code
+Copy code
 import { useState } from "react";
 
 function Counter() {
@@ -4232,7 +4100,7 @@ Real DOM: Re-renders all items.
 Virtual DOM: Compares old vs. new tree → updates only the changed item.
 
 jsx
-￼Copy code
+Copy code
 function List({ items }) {
   return (
     <ul>
@@ -4264,11 +4132,11 @@ Updates entire tree	Updates only changed parts
 Slow for large UIs	Fast and efficient
 Directly linked to browser UI	In-memory representation
 Example: document.getElementById()	Example: React updates via setState
-￼
+
 Q4 (Coding): Show how React uses Virtual DOM to update a counter without re-rendering the whole page.
 
 jsx
-￼Copy code
+Copy code
 function Counter() {
   const [count, setCount] = React.useState(0);
 
@@ -4287,17 +4155,7 @@ A: Reconciliation is the process React uses to compare the new Virtual DOM with 
 
 👉 Do you want me to continue with the next topic: “Lifecycle of React?”
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Yes
-￼
-￼
-ChatGPT said:
+
 Perfect 🚀 Let’s now move to the next topic: Lifecycle of React
 
 🔹 React Lifecycle
@@ -4344,7 +4202,7 @@ Functional Component: useEffect(() => { return () => { ... }}, [])
 🔹 Code Examples
 Example 1: Class Component Lifecycle
 jsx
-￼Copy code
+Copy code
 import React from "react";
 
 class LifecycleDemo extends React.Component {
@@ -4381,7 +4239,7 @@ class LifecycleDemo extends React.Component {
 export default LifecycleDemo;
 Example 2: Functional Component Lifecycle (Hooks)
 jsx
-￼Copy code
+Copy code
 import { useState, useEffect } from "react";
 
 function LifecycleDemo() {
@@ -4423,7 +4281,7 @@ A: It is called once after the component is mounted. Commonly used for API calls
 Example:
 
 jsx
-￼Copy code
+Copy code
 useEffect(() => {
   fetch("/api/data").then(res => res.json()).then(console.log);
 }, []);
@@ -4434,7 +4292,7 @@ In functional components → return cleanup function inside useEffect.
 Example:
 
 jsx
-￼Copy code
+Copy code
 useEffect(() => {
   const timer = setInterval(() => console.log("Running..."), 1000);
 
@@ -4447,17 +4305,7 @@ A: After every re-render due to state/prop changes. Useful for reacting to updat
 
 👉 Do you want me to continue with the next topic: “What is use of routing in ReactJs?”
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Yes
-￼
-￼
-ChatGPT said:
+
 Great 👍 Let’s move to the next topic:
 
 🔹 What is the use of Routing in React.js?
@@ -4479,12 +4327,12 @@ Dynamic Routes: Helps render components based on parameters (/user/1, /user/2).
 🔹 React Router (Most Used Library)
 Installation
 bash
-￼Copy code
+Copy code
 npm install react-router-dom
 🔹 Code Examples
 Example 1: Basic Routing
 jsx
-￼Copy code
+Copy code
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -4515,7 +4363,7 @@ function App() {
 export default App;
 Example 2: Dynamic Routing
 jsx
-￼Copy code
+Copy code
 import { BrowserRouter as Router, Routes, Route, useParams } from "react-router-dom";
 
 function User() {
@@ -4538,7 +4386,7 @@ export default App;
 
 Example 3: Nested Routing
 jsx
-￼Copy code
+Copy code
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function Dashboard() {
@@ -4586,7 +4434,7 @@ Q4: How do you handle dynamic routes in React?
 A: Use :param in the route path and useParams hook.
 
 jsx
-￼Copy code
+Copy code
 <Route path="/user/:id" element={<User />} />
 Q5: What is the difference between Switch and Routes in React Router?
 A:
@@ -4599,17 +4447,7 @@ In React Router v6, it is replaced by Routes, which always matches best possible
 
 👉 Do you want me to continue with next topic: “How to bind or store your data into React component?”
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Yes
-￼
-￼
-ChatGPT said:
+
 Perfect 👍 Let’s move to the next topic:
 
 🔹 How to Bind or Store Data into a React Component?
@@ -4631,7 +4469,7 @@ Using Context API/Redux → global data management.
 🔹 Code Examples
 Example 1: Binding Data with useState
 jsx
-￼Copy code
+Copy code
 import React, { useState } from "react";
 
 function App() {
@@ -4650,7 +4488,7 @@ export default App;
 
 Example 2: Binding Data Using Props
 jsx
-￼Copy code
+Copy code
 function Child({ user }) {
   return <h2>Welcome, {user}</h2>;
 }
@@ -4662,7 +4500,7 @@ function App() {
 
 Example 3: Binding User Input (Controlled Component)
 jsx
-￼Copy code
+Copy code
 import React, { useState } from "react";
 
 function App() {
@@ -4686,7 +4524,7 @@ export default App;
 
 Example 4: Binding Data from API
 jsx
-￼Copy code
+Copy code
 import React, { useState, useEffect } from "react";
 
 function App() {
@@ -4732,17 +4570,7 @@ That covers data binding & storing in React components with multiple examples an
 
 👉 Do you want me to move to the next topic: Hooks in React?
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Yes
-￼
-￼
-ChatGPT said:
+
 Great 👍 Let’s move to the next topic:
 
 🔹 Hooks in React
@@ -4770,7 +4598,7 @@ Custom Hooks → Your own reusable hook logic.
 🔹 Code Examples
 Example 1: useState (State Hook)
 jsx
-￼Copy code
+Copy code
 import React, { useState } from "react";
 
 function Counter() {
@@ -4789,7 +4617,7 @@ export default Counter;
 
 Example 2: useEffect (Side Effects)
 jsx
-￼Copy code
+Copy code
 import React, { useState, useEffect } from "react";
 
 function Timer() {
@@ -4808,7 +4636,7 @@ export default Timer;
 
 Example 3: useContext (Sharing Global Data)
 jsx
-￼Copy code
+Copy code
 import React, { createContext, useContext } from "react";
 
 const UserContext = createContext();
@@ -4831,7 +4659,7 @@ export default App;
 
 Example 4: useRef (Access DOM / Persist Value)
 jsx
-￼Copy code
+Copy code
 import React, { useRef } from "react";
 
 function InputFocus() {
@@ -4854,7 +4682,7 @@ export default InputFocus;
 
 Example 5: Custom Hook
 jsx
-￼Copy code
+Copy code
 import { useState, useEffect } from "react";
 
 // Custom hook
@@ -4903,17 +4731,7 @@ A: A custom hook is a reusable function that starts with use and allows you to e
 
 👉 Do you want me to move to the next topic: Props in React?
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Yes
-￼
-￼
-ChatGPT said:
+
 Perfect 👍 Let’s dive into the next topic:
 
 🔹 Props in React
@@ -4927,7 +4745,7 @@ Think of props like function parameters. Just like you pass arguments to a funct
 🔹 Code Examples
 Example 1: Passing Props
 jsx
-￼Copy code
+Copy code
 function Greeting(props) {
   return <h2>Hello, {props.name}!</h2>;
 }
@@ -4942,7 +4760,7 @@ Here, name="Vishwanath" is passed as a prop.
 
 Example 2: Destructuring Props
 jsx
-￼Copy code
+Copy code
 function Greeting({ name, age }) {
   return <h2>{name} is {age} years old.</h2>;
 }
@@ -4956,7 +4774,7 @@ export default App;
 
 Example 3: Passing Functions as Props
 jsx
-￼Copy code
+Copy code
 function Button({ onClick }) {
   return <button onClick={onClick}>Click Me</button>;
 }
@@ -4971,7 +4789,7 @@ export default App;
 
 Example 4: Passing Objects/Arrays as Props
 jsx
-￼Copy code
+Copy code
 function User({ user }) {
   return <h2>{user.name} - {user.email}</h2>;
 }
@@ -4986,7 +4804,7 @@ export default App;
 
 Example 5: Default Props
 jsx
-￼Copy code
+Copy code
 function Welcome({ name = "Guest" }) {
   return <h2>Welcome, {name}!</h2>;
 }
@@ -5027,17 +4845,15 @@ A: The value will be undefined. You can handle it using default props or PropTyp
 
 👉 Do you want me to move to the next topic: How to call REST API in React.js?
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Yes all rest APIs should be there using fetch and axios 
-￼
-￼
-ChatGPT said:
+
+
+
+
+
+
+ all rest APIs should be there using fetch and axios 
+
+
 Great 👍 Let’s go deep into Calling REST APIs in React.js using Fetch and Axios.
 
 🔹 Calling REST API in React.js
@@ -5050,7 +4866,7 @@ Think of an API like a waiter in a restaurant 🍽️. You (React app) place an 
 🔹 Using Fetch API
 1. GET Request (Fetch Data)
 jsx
-￼Copy code
+Copy code
 import { useEffect, useState } from "react";
 
 function App() {
@@ -5080,7 +4896,7 @@ export default App;
 
 2. POST Request (Send Data)
 jsx
-￼Copy code
+Copy code
 function App() {
   const addUser = () => {
     fetch("https://jsonplaceholder.typicode.com/users", {
@@ -5101,7 +4917,7 @@ export default App;
 
 3. PUT Request (Update Data)
 jsx
-￼Copy code
+Copy code
 function App() {
   const updateUser = () => {
     fetch("https://jsonplaceholder.typicode.com/users/1", {
@@ -5119,7 +4935,7 @@ function App() {
 export default App;
 4. DELETE Request (Remove Data)
 jsx
-￼Copy code
+Copy code
 function App() {
   const deleteUser = () => {
     fetch("https://jsonplaceholder.typicode.com/users/1", {
@@ -5135,11 +4951,11 @@ export default App;
 👉 First install:
 
 bash
-￼Copy code
+Copy code
 npm install axios
 1. GET Request with Axios
 jsx
-￼Copy code
+Copy code
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -5166,7 +4982,7 @@ function App() {
 export default App;
 2. POST Request with Axios
 jsx
-￼Copy code
+Copy code
 function App() {
   const createPost = () => {
     axios
@@ -5185,7 +5001,7 @@ function App() {
 export default App;
 3. PUT Request with Axios
 jsx
-￼Copy code
+Copy code
 function App() {
   const updatePost = () => {
     axios
@@ -5202,7 +5018,7 @@ function App() {
 export default App;
 4. DELETE Request with Axios
 jsx
-￼Copy code
+Copy code
 function App() {
   const deletePost = () => {
     axios
@@ -5238,17 +5054,7 @@ A: Yes ✅. Using AbortController with Fetch or axios.CancelToken.
 
 👉 Do you want me to move to the next topic: Custom Hooks in React?
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Yes
-￼
-￼
-ChatGPT said:
+
 Perfect 👍 Let’s move to the next big topic:
 
 🔹 Custom Hooks in React
@@ -5271,7 +5077,7 @@ Easy to test and maintain.
 👉 Instead of repeating API fetching logic in every component, create a custom hook.
 
 jsx
-￼Copy code
+Copy code
 // useFetch.js
 import { useEffect, useState } from "react";
 
@@ -5298,7 +5104,7 @@ export default useFetch;
 ✅ Using the hook:
 
 jsx
-￼Copy code
+Copy code
 // App.js
 import useFetch from "./useFetch";
 
@@ -5325,7 +5131,7 @@ export default App;
 👉 Store and get data from localStorage easily.
 
 jsx
-￼Copy code
+Copy code
 // useLocalStorage.js
 import { useState } from "react";
 
@@ -5347,7 +5153,7 @@ export default useLocalStorage;
 ✅ Using the hook:
 
 jsx
-￼Copy code
+Copy code
 // App.js
 import useLocalStorage from "./useLocalStorage";
 
@@ -5367,7 +5173,7 @@ export default App;
 👉 Track window size dynamically.
 
 jsx
-￼Copy code
+Copy code
 // useWindowSize.js
 import { useEffect, useState } from "react";
 
@@ -5387,7 +5193,7 @@ export default useWindowSize;
 ✅ Using the hook:
 
 jsx
-￼Copy code
+Copy code
 // App.js
 import useWindowSize from "./useWindowSize";
 
@@ -5428,17 +5234,8 @@ Custom Hook → returns logic/state (no UI).
 
 👉 Do you want me to continue with the next topic: Higher-Order Components (HOC) in React?
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Ok
-￼
-￼
-ChatGPT said:
+
+
 Nice 👍 Let’s move to the next concept:
 
 🔹 Higher-Order Components (HOC) in React
@@ -5459,7 +5256,7 @@ Inject props dynamically.
 
 🔹 Example 1 – Basic HOC
 jsx
-￼Copy code
+Copy code
 // withLogger.js
 import React from "react";
 
@@ -5474,7 +5271,7 @@ export default withLogger;
 ✅ Usage:
 
 jsx
-￼Copy code
+Copy code
 // App.js
 import withLogger from "./withLogger";
 
@@ -5493,7 +5290,7 @@ export default App;
 
 🔹 Example 2 – HOC for Authentication
 jsx
-￼Copy code
+Copy code
 // withAuth.js
 import React from "react";
 
@@ -5513,7 +5310,7 @@ export default withAuth;
 ✅ Usage:
 
 jsx
-￼Copy code
+Copy code
 // App.js
 import withAuth from "./withAuth";
 
@@ -5530,7 +5327,7 @@ function App() {
 export default App;
 🔹 Example 3 – HOC with Loading State
 jsx
-￼Copy code
+Copy code
 // withLoading.js
 import React from "react";
 
@@ -5547,7 +5344,7 @@ export default withLoading;
 ✅ Usage:
 
 jsx
-￼Copy code
+Copy code
 // App.js
 import withLoading from "./withLoading";
 
@@ -5599,17 +5396,7 @@ Less preferred in modern React (custom hooks are often better).
 
 👉 Do you want me to move to the next topic: Conditional Rendering in React?
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Yes
-￼
-￼
-ChatGPT said:
+
 Perfect 👍 let’s go into Conditional Rendering in React.
 
 🔹 Conditional Rendering in React
@@ -5630,7 +5417,7 @@ React chooses which UI to show based on the condition.
 🔹 Ways to Do Conditional Rendering
 ✅ 1. Using if-else
 jsx
-￼Copy code
+Copy code
 function App({ isLoggedIn }) {
   if (isLoggedIn) {
     return <h2>Welcome Back!</h2>;
@@ -5642,7 +5429,7 @@ function App({ isLoggedIn }) {
 export default App;
 ✅ 2. Using Ternary Operator
 jsx
-￼Copy code
+Copy code
 function App({ isLoggedIn }) {
   return (
     <div>
@@ -5656,7 +5443,7 @@ export default App;
 👉 Render something only if the condition is true.
 
 jsx
-￼Copy code
+Copy code
 function App({ isAdmin }) {
   return (
     <div>
@@ -5669,7 +5456,7 @@ function App({ isAdmin }) {
 export default App;
 ✅ 4. Using Switch Case
 jsx
-￼Copy code
+Copy code
 function Status({ status }) {
   switch (status) {
     case "loading":
@@ -5690,7 +5477,7 @@ function App() {
 export default App;
 ✅ 5. Rendering Components Conditionally
 jsx
-￼Copy code
+Copy code
 function Login() {
   return <h2>Please Login</h2>;
 }
@@ -5730,17 +5517,7 @@ Use ternary for small cases, if/else or switch for bigger logic.
 
 👉 Do you want me to continue with the next topic: State Management in React (useState, useReducer, Context API, Redux, etc.)?
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Yes
-￼
-￼
-ChatGPT said:
+
 Perfect 👍 this is a big topic so I’ll go step by step.
 
 🔹 State Management in React
@@ -5755,7 +5532,7 @@ Think of state like a whiteboard 📝 in your room. You can write something on i
 For small, component-specific state.
 
 jsx
-￼Copy code
+Copy code
 import { useState } from "react";
 
 function Counter() {
@@ -5776,7 +5553,7 @@ export default Counter;
 For complex state logic with multiple actions.
 
 jsx
-￼Copy code
+Copy code
 import { useReducer } from "react";
 
 function reducer(state, action) {
@@ -5809,7 +5586,7 @@ export default Counter;
 Passing data from parent → child → grandchild.
 
 jsx
-￼Copy code
+Copy code
 function Child({ message }) {
   return <h2>{message}</h2>;
 }
@@ -5823,7 +5600,7 @@ function Parent() {
 Used to avoid prop drilling and share data globally.
 
 jsx
-￼Copy code
+Copy code
 import { createContext, useContext, useState } from "react";
 
 const UserContext = createContext();
@@ -5849,7 +5626,7 @@ export default App;
 ✅ 5. External Libraries (Redux, Zustand, Recoil, MobX)
 Example: Redux (Most Popular)
 jsx
-￼Copy code
+Copy code
 // store.js
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
@@ -5865,7 +5642,7 @@ const counterSlice = createSlice({
 export const { increment, decrement } = counterSlice.actions;
 export const store = configureStore({ reducer: { counter: counterSlice.reducer } });
 jsx
-￼Copy code
+Copy code
 // App.js
 import { Provider, useDispatch, useSelector } from "react-redux";
 import { store, increment, decrement } from "./store";
@@ -5932,17 +5709,7 @@ No built-in middleware like Redux.
 
 👉 Do you want me to continue with the next topic: Lifting State Up in React?
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Yes
-￼
-￼
-ChatGPT said:
+
 Great 👍 let’s go into the next concept:
 
 🔹 Lifting State Up in React
@@ -5954,7 +5721,7 @@ Imagine two kids (child components) want to play with the same toy 🎮. Instead
 
 🔹 Example 1 – Without Lifting State Up (Problem)
 jsx
-￼Copy code
+Copy code
 function CelsiusInput() {
   const [celsius, setCelsius] = React.useState("");
 
@@ -6001,7 +5768,7 @@ export default App;
 
 🔹 Example 2 – With Lifting State Up (Solution)
 jsx
-￼Copy code
+Copy code
 function TemperatureInput({ label, value, onChange }) {
   return (
     <div>
@@ -6044,7 +5811,7 @@ export default App;
 
 🔹 Example 3 – Sibling Components Sharing State
 jsx
-￼Copy code
+Copy code
 function ChildA({ count }) {
   return <h2>Child A Count: {count}</h2>;
 }
@@ -6088,17 +5855,7 @@ Answer: Store the state in the parent and pass it down to both input components 
 
 👉 Do you want me to move to the next topic: Difference between Props and useState?
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Yes
-￼
-￼
-ChatGPT said:
+
 Perfect 👍 let’s go step by step.
 
 🔹 Difference Between Props and useState in React
@@ -6116,7 +5873,7 @@ useState = Internal data (owned by the component itself, can change using setter
 
 🔹 Example 1 – Props (Read-only)
 jsx
-￼Copy code
+Copy code
 function Greeting({ name }) {
   return <h1>Hello, {name}!</h1>;
 }
@@ -6141,7 +5898,7 @@ Hello, Arjun!
 
 🔹 Example 2 – useState (Local State)
 jsx
-￼Copy code
+Copy code
 function Counter() {
   const [count, setCount] = React.useState(0);
 
@@ -6158,7 +5915,7 @@ export default Counter;
 
 🔹 Example 3 – Props + useState Together
 jsx
-￼Copy code
+Copy code
 function Child({ initialValue }) {
   const [value, setValue] = React.useState(initialValue);
 
@@ -6184,7 +5941,7 @@ Mutability	Immutable (read-only)	Mutable (can be updated)
 Ownership	Controlled by parent	Controlled by the component itself
 Usage	For component communication	For managing dynamic data in a component
 Example	<Greeting name="Vishwanath" />	const [count, setCount] = useState(0)
-￼
+
 🔹 Interview Questions
 Q1: What is the main difference between props and state (useState)?
 A: Props are read-only data passed from parent, while state is mutable data maintained by the component itself.
@@ -6206,17 +5963,15 @@ Answer: Use props (initialTime) as the initial value for state, then manage upda
 
 👉 Shall I continue with the next concept: Context API in React?
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Yes 
-￼
-￼
-ChatGPT said:
+
+
+
+
+
+
+ 
+
+
 Great 🙌 Let’s go into Context API in React.
 
 🔹 Context API in React
@@ -6238,7 +5993,7 @@ Consume Context → Use useContext in child components
 
 🔹 Example 1 – Without Context (Prop Drilling)
 jsx
-￼Copy code
+Copy code
 function Child({ user }) {
   return <h2>User: {user}</h2>;
 }
@@ -6257,7 +6012,7 @@ export default App;
 
 🔹 Example 2 – With Context API
 jsx
-￼Copy code
+Copy code
 import React, { createContext, useContext } from "react";
 
 const UserContext = createContext();
@@ -6290,7 +6045,7 @@ export default App;
 
 🔹 Example 3 – Context with State Management
 jsx
-￼Copy code
+Copy code
 import React, { createContext, useContext, useState } from "react";
 
 const ThemeContext = createContext();
@@ -6354,17 +6109,7 @@ Answer: Create AuthContext, wrap app in AuthContext.Provider, and use useContext
 
 👉 Shall I continue with the next concept: useMemo in React?
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Yes
-￼
-￼
-ChatGPT said:
+
 Awesome 🚀 let’s dive into useMemo in React.
 
 🔹 useMemo in React
@@ -6376,7 +6121,7 @@ Imagine solving a hard math problem 🧮. Instead of solving it every time, you 
 
 🔹 Syntax
 jsx
-￼Copy code
+Copy code
 const memoizedValue = useMemo(() => computeSomething(a, b), [a, b]);
 computeSomething(a, b) → Expensive function
 
@@ -6386,7 +6131,7 @@ memoizedValue → Cached result
 
 🔹 Example 1 – Without useMemo (Re-calculation Every Render)
 jsx
-￼Copy code
+Copy code
 import React, { useState } from "react";
 
 function ExpensiveCalculation(num) {
@@ -6418,7 +6163,7 @@ export default App;
 
 🔹 Example 2 – With useMemo (Optimized)
 jsx
-￼Copy code
+Copy code
 import React, { useState, useMemo } from "react";
 
 function ExpensiveCalculation(num) {
@@ -6450,7 +6195,7 @@ export default App;
 
 🔹 Example 3 – useMemo with Derived Data
 jsx
-￼Copy code
+Copy code
 import React, { useState, useMemo } from "react";
 
 function App() {
@@ -6503,17 +6248,7 @@ Answer: Store the filtered list in useMemo with [filterCondition, items] as depe
 
 👉 Shall I continue with the next concept: useCallback in React?
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Yes
-￼
-￼
-ChatGPT said:
+
 Perfect 👍 let’s break down useCallback in React.
 
 🔹 useCallback in React
@@ -6529,7 +6264,7 @@ Normally in React, every re-render creates a new function. This can cause unnece
 
 🔹 Syntax
 jsx
-￼Copy code
+Copy code
 const memoizedCallback = useCallback(() => {
   doSomething(a, b);
 }, [a, b]);
@@ -6541,7 +6276,7 @@ Function is re-created only if dependencies change
 
 🔹 Example 1 – Without useCallback (Problem)
 jsx
-￼Copy code
+Copy code
 import React, { useState } from "react";
 
 function Child({ onClick }) {
@@ -6570,7 +6305,7 @@ export default App;
 
 🔹 Example 2 – With useCallback (Optimized)
 jsx
-￼Copy code
+Copy code
 import React, { useState, useCallback } from "react";
 
 function Child({ onClick }) {
@@ -6599,7 +6334,7 @@ export default App;
 
 🔹 Example 3 – useCallback with Dependencies
 jsx
-￼Copy code
+Copy code
 import React, { useState, useCallback } from "react";
 
 function Child({ onAdd }) {
@@ -6664,17 +6399,7 @@ Answer: Use useCallback to memoize onAddTodo.
 
 👉 Do you want me to continue with the next concept: Controlled vs Uncontrolled Components?
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Yes
-￼
-￼
-ChatGPT said:
+
 Nice 👍 let’s go into Controlled vs Uncontrolled Components.
 
 🔹 Controlled vs Uncontrolled Components in React
@@ -6690,7 +6415,7 @@ Uncontrolled → The DOM is the boss 🌐 (input keeps its own value, React just
 
 🔹 Example 1 – Controlled Component
 jsx
-￼Copy code
+Copy code
 import React, { useState } from "react";
 
 function ControlledForm() {
@@ -6718,7 +6443,7 @@ export default ControlledForm;
 
 🔹 Example 2 – Uncontrolled Component
 jsx
-￼Copy code
+Copy code
 import React, { useRef } from "react";
 
 function UncontrolledForm() {
@@ -6742,7 +6467,7 @@ export default UncontrolledForm;
 
 🔹 Example 3 – Controlled vs Uncontrolled in Same Form
 jsx
-￼Copy code
+Copy code
 import React, { useState, useRef } from "react";
 
 function MixedForm() {
@@ -6780,7 +6505,7 @@ Who controls input?	React	DOM
 Accessing value	state variable	ref.current.value
 Use case	When validation, live updates are needed	When quick form without re-renders
 Performance	More re-renders	Less re-renders
-￼
+
 🔹 When to Use
 ✅ Controlled → When you need validation, conditional rendering, live updates.
 ✅ Uncontrolled → When you just need form values on submit, no complex tracking.
@@ -6806,17 +6531,7 @@ Answer: Email → Controlled (with useState), Password → Uncontrolled (with us
 
 👉 Do you want me to move to the final topic: **Lazy & Suspense (Code Splitting) in React)?
 
-￼
-￼
-￼
-￼
-￼
-￼
-You said:
-Yes
-￼
-￼
-ChatGPT said:
+
 Perfect 👍 let’s cover the final topic: Lazy & Suspense (Code Splitting) in React).
 
 🔹 Lazy & Suspense (Code Splitting) in React
@@ -6834,7 +6549,7 @@ This improves performance and load time by splitting code into smaller chunks (c
 
 🔹 Syntax
 jsx
-￼Copy code
+Copy code
 const Component = React.lazy(() => import("./Component"));
 
 <Suspense fallback={<div>Loading...</div>}>
@@ -6842,7 +6557,7 @@ const Component = React.lazy(() => import("./Component"));
 </Suspense>
 🔹 Example 1 – Without Lazy Loading
 jsx
-￼Copy code
+Copy code
 import About from "./About";
 import Contact from "./Contact";
 
@@ -6861,7 +6576,7 @@ export default App;
 
 🔹 Example 2 – With React.lazy and Suspense
 jsx
-￼Copy code
+Copy code
 import React, { Suspense, lazy } from "react";
 
 const About = lazy(() => import("./About"));
@@ -6886,7 +6601,7 @@ export default App;
 
 🔹 Example 3 – Lazy Loading with Routing
 jsx
-￼Copy code
+Copy code
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
