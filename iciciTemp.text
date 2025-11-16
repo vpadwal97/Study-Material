@@ -1,778 +1,227 @@
-ICICI Lombard Workmen Compensation Policy Page
-
-I'll create a replica of the ICICI Lombard Workmen Compensation Policy page with all the key elements and functionality.
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workmen Compensation Policy | ICICI Lombard</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Employee's Compensation Insurance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root {
-            --primary-blue: #004a8d;
-            --secondary-blue: #0066cc;
-            --accent-orange: #ff6b00;
-            --light-bg: #f5f7fa;
-            --dark-text: #333333;
-            --light-text: #666666;
-            --white: #ffffff;
-            --border-color: #e0e0e0;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        body {
+            background-color: #f8f9fa;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
-        body {
-            background-color: var(--light-bg);
-            color: var(--dark-text);
-            line-height: 1.6;
-        }
-        
-        /* Header Styles */
-        .top-bar {
-            background-color: var(--primary-blue);
-            color: var(--white);
-            padding: 8px 0;
-            font-size: 14px;
-        }
-        
-        .top-bar-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            padding: 0 20px;
-        }
-        
-        .top-bar-links a {
-            color: var(--white);
-            text-decoration: none;
-            margin-left: 20px;
-        }
-        
-        .main-header {
-            background-color: var(--white);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .header-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-        
-        .logo img {
-            height: 40px;
-        }
-        
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-        
-        .nav-links li {
-            margin-left: 25px;
-            position: relative;
-        }
-        
-        .nav-links a {
-            text-decoration: none;
-            color: var(--dark-text);
-            font-weight: 500;
-            font-size: 16px;
-            transition: color 0.3s;
-            display: flex;
-            align-items: center;
-        }
-        
-        .nav-links a:hover {
-            color: var(--primary-blue);
-        }
-        
-        .nav-links a i {
-            margin-left: 5px;
-            font-size: 12px;
-        }
-        
-        .header-buttons {
-            display: flex;
-            align-items: center;
-        }
-        
-        .login-btn {
-            background-color: var(--primary-blue);
-            color: var(--white);
-            border: none;
-            padding: 8px 20px;
-            border-radius: 4px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            margin-left: 15px;
-        }
-        
-        .login-btn:hover {
-            background-color: var(--secondary-blue);
-        }
-        
-        /* Hero Banner */
-        .hero-banner {
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
-            color: var(--white);
-            padding: 60px 20px;
-        }
-        
-        .hero-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        
-        .hero-content {
-            flex: 1;
-            padding-right: 40px;
-        }
-        
-        .hero-content h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        
-        .hero-content p {
-            font-size: 18px;
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
-        
-        .hero-buttons {
-            display: flex;
-            gap: 15px;
-        }
-        
-        .btn-primary {
-            background-color: var(--accent-orange);
-            color: var(--white);
-            border: none;
-            padding: 12px 30px;
-            font-size: 16px;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            font-weight: 600;
-        }
-        
-        .btn-primary:hover {
-            background-color: #e55c00;
-        }
-        
-        .btn-secondary {
-            background-color: transparent;
-            color: var(--white);
-            border: 2px solid var(--white);
-            padding: 10px 28px;
-            font-size: 16px;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            font-weight: 600;
-        }
-        
-        .btn-secondary:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-        
-        .hero-image {
-            flex: 1;
-            text-align: center;
-        }
-        
-        .hero-image img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-        
-        /* Main Content */
-        .main-content {
-            max-width: 1200px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
-        
-        .content-section {
-            background-color: var(--white);
-            border-radius: 8px;
-            padding: 40px;
-            margin-bottom: 40px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-        
-        .section-title {
-            color: var(--primary-blue);
-            margin-bottom: 25px;
-            font-size: 24px;
-            display: flex;
-            align-items: center;
-        }
-        
-        .section-title i {
-            margin-right: 10px;
-            font-size: 20px;
-        }
-        
-        /* Features Grid */
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-        
-        .feature-card {
-            background-color: var(--light-bg);
-            border-radius: 8px;
-            padding: 25px;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .feature-icon {
-            background-color: var(--primary-blue);
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            color: var(--white);
-            font-size: 28px;
-        }
-        
-        .feature-card h3 {
-            margin-bottom: 15px;
-            color: var(--primary-blue);
-        }
-        
-        /* Coverage List */
-        .coverage-list {
-            list-style: none;
-            margin-top: 20px;
-        }
-        
-        .coverage-list li {
-            padding: 12px 0;
-            border-bottom: 1px solid var(--border-color);
-            display: flex;
-            align-items: center;
-        }
-        
-        .coverage-list li:last-child {
-            border-bottom: none;
-        }
-        
-        .coverage-list li i {
-            color: var(--accent-orange);
-            margin-right: 10px;
-            font-size: 18px;
-        }
-        
-        /* Process Steps */
-        .process-steps {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 40px;
-            position: relative;
-        }
-        
-        .process-steps::before {
-            content: '';
-            position: absolute;
-            top: 40px;
-            left: 10%;
-            right: 10%;
-            height: 2px;
-            background-color: var(--primary-blue);
-            z-index: 1;
-        }
-        
-        .step {
-            text-align: center;
-            position: relative;
-            z-index: 2;
-            flex: 1;
-        }
-        
-        .step-number {
-            background-color: var(--primary-blue);
-            color: var(--white);
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        
-        .step h3 {
-            margin-bottom: 10px;
-            color: var(--primary-blue);
-        }
-        
-        /* FAQ Section */
-        .faq-item {
-            background-color: var(--light-bg);
-            border-radius: 8px;
-            margin-bottom: 15px;
-            overflow: hidden;
-        }
-        
-        .faq-question {
+        .container {
+            max-width: 500px;
+            margin: 40px auto;
             padding: 20px;
-            cursor: pointer;
+        }
+        .header {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            font-weight: 600;
-        }
-        
-        .faq-answer {
-            padding: 0 20px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s, padding 0.3s;
-        }
-        
-        .faq-item.active .faq-answer {
-            padding: 0 20px 20px;
-            max-height: 500px;
-        }
-        
-        .faq-question i {
-            transition: transform 0.3s;
-        }
-        
-        .faq-item.active .faq-question i {
-            transform: rotate(180deg);
-        }
-        
-        /* Footer */
-        footer {
-            background-color: #003366;
-            color: var(--white);
-            padding: 60px 20px 20px;
-        }
-        
-        .footer-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-        }
-        
-        .footer-column h3 {
             margin-bottom: 20px;
+        }
+        .back-btn {
+            background: none;
+            border: none;
             font-size: 18px;
-        }
-        
-        .footer-column ul {
-            list-style: none;
-        }
-        
-        .footer-column ul li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-column a {
-            color: #ccc;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .footer-column a:hover {
-            color: var(--white);
-        }
-        
-        .social-links {
-            display: flex;
-            margin-top: 20px;
-        }
-        
-        .social-links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 36px;
-            height: 36px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
+            color: #333;
             margin-right: 10px;
-            color: var(--white);
-            text-decoration: none;
-            transition: background-color 0.3s;
         }
-        
-        .social-links a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
+        .card {
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: none;
         }
-        
-        .copyright {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: #ccc;
+        .card-header {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+            padding: 15px 20px;
+            border-radius: 12px 12px 0 0 !important;
+        }
+        .card-body {
+            padding: 25px;
+        }
+        .form-label {
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        .form-control {
+            border-radius: 8px;
+            padding: 10px 15px;
+            border: 1px solid #ced4da;
+            margin-bottom: 20px;
+        }
+        .form-control:focus {
+            border-color: #80bdff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+        .btn-primary {
+            background-color: #0d6efd;
+            border: none;
+            border-radius: 8px;
+            padding: 12px;
+            font-weight: 500;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .btn-outline-primary {
+            border-radius: 8px;
+            padding: 12px;
+            font-weight: 500;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .form-check {
+            margin-bottom: 15px;
+        }
+        .form-check-input:checked {
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+        }
+        .step-indicator {
             font-size: 14px;
+            color: #6c757d;
+            margin-bottom: 5px;
         }
-        
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            
-            .hero-container {
-                flex-direction: column;
-            }
-            
-            .hero-content {
-                padding-right: 0;
-                margin-bottom: 30px;
-                text-align: center;
-            }
-            
-            .hero-buttons {
-                justify-content: center;
-            }
-            
-            .process-steps {
-                flex-direction: column;
-            }
-            
-            .process-steps::before {
-                display: none;
-            }
-            
-            .step {
-                margin-bottom: 30px;
-            }
+        .policy-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+        .section-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        .whatsapp-icon {
+            color: #25D366;
+            margin-right: 5px;
         }
     </style>
 </head>
 <body>
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="top-bar-container">
-            <div class="contact-info">
-                <span>Customer Care: 1800 2666</span>
+    <div class="container">
+        <div class="header">
+            <button class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <div>
+                <div class="step-indicator">step 1/2</div>
+                <h1 class="policy-title">Employee's Compensation Insurance</h1>
             </div>
-            <div class="top-bar-links">
-                <a href="#">Claims</a>
-                <a href="#">Renewals</a>
-                <a href="#">Locate Us</a>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h2 class="section-title">Workmen Compensation Insurance</h2>
+                <p class="mb-0">Protect your workers under a single policy.</p>
+            </div>
+            <div class="card-body">
+                <form id="insuranceForm">
+                    <div class="mb-3">
+                        <label for="mobileNumber" class="form-label">Mobile number</label>
+                        <input type="tel" class="form-control" id="mobileNumber" placeholder="Enter mobile number">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email address">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="companyName" class="form-label">Name of the company</label>
+                        <input type="text" class="form-control" id="companyName" placeholder="Enter company name">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="pincode" class="form-label">Pincode</label>
+                        <input type="text" class="form-control" id="pincode" placeholder="Enter pincode">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Continue</button>
+                    <button type="button" class="btn btn-outline-primary">Retrieve quote</button>
+                    
+                    <div class="form-check mt-4">
+                        <input class="form-check-input" type="checkbox" id="termsConditions" checked>
+                        <label class="form-check-label" for="termsConditions">
+                            I agree to the terms and Conditions
+                        </label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="whatsappUpdates" checked>
+                        <label class="form-check-label" for="whatsappUpdates">
+                            <i class="fab fa-whatsapp whatsapp-icon"></i> I want to receive updates on 💶 WhatsApp
+                        </label>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    
-    <!-- Main Header -->
-    <header class="main-header">
-        <div class="header-container">
-            <div class="logo">
-                <img src="https://www.icicilombard.com/docs/default-source/project/images/logo.svg" alt="ICICI Lombard">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Insurance <i class="fas fa-chevron-down"></i></a></li>
-                <li><a href="#">Claims <i class="fas fa-chevron-down"></i></a></li>
-                <li><a href="#">Support <i class="fas fa-chevron-down"></i></a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-            <div class="header-buttons">
-                <button class="login-btn">Login</button>
-            </div>
-        </div>
-    </header>
-    
-    <!-- Hero Banner -->
-    <section class="hero-banner">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1>Workmen Compensation Policy</h1>
-                <p>Protect your workforce and your business with comprehensive workmen compensation insurance. Ensure financial security for your employees in case of work-related injuries or illnesses as mandated by the Workmen's Compensation Act, 1923.</p>
-                <div class="hero-buttons">
-                    <button class="btn-primary">Buy Now</button>
-                    <button class="btn-secondary">Calculate Premium</button>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Workmen Compensation">
-            </div>
-        </div>
-    </section>
-    
-    <!-- Main Content -->
-    <div class="main-content">
-        <!-- Key Features Section -->
-        <section class="content-section">
-            <h2 class="section-title"><i class="fas fa-star"></i> Key Features</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Comprehensive Coverage</h3>
-                    <p>Protection against work-related injuries, disabilities, and occupational diseases for your employees.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-rupee-sign"></i>
-                    </div>
-                    <h3>Cost-Effective Premiums</h3>
-                    <p>Competitive premium rates with flexible payment options tailored to your business needs.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3>Quick Claim Settlement</h3>
-                    <p>Fast and hassle-free claim settlement process with dedicated support for your employees.</p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Coverage Details Section -->
-        <section class="content-section">
-            <h2 class="section-title"><i class="fas fa-check-circle"></i> What's Covered</h2>
-            <ul class="coverage-list">
-                <li><i class="fas fa-check"></i> Compensation for death resulting from employment injury</li>
-                <li><i class="fas fa-check"></i> Compensation for permanent total disablement</li>
-                <li><i class="fas fa-check"></i> Compensation for permanent partial disablement</li>
-                <li><i class="fas fa-check"></i> Compensation for temporary disablement</li>
-                <li><i class="fas fa-check"></i> Medical expenses for treatment of injuries</li>
-                <li><i class="fas fa-check"></i> Compensation for occupational diseases</li>
-                <li><i class="fas fa-check"></i> Rehabilitation expenses</li>
-            </ul>
-        </section>
-        
-        <!-- Benefits Section -->
-        <section class="content-section">
-            <h2 class="section-title"><i class="fas fa-award"></i> Benefits</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-gavel"></i>
-                    </div>
-                    <h3>Legal Compliance</h3>
-                    <p>Meets the statutory requirements under the Workmen's Compensation Act, 1923.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-user-shield"></i>
-                    </div>
-                    <h3>Employee Welfare</h3>
-                    <p>Demonstrates your commitment to employee safety and well-being.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-hand-holding-usd"></i>
-                    </div>
-                    <h3>Financial Protection</h3>
-                    <p>Protects your business from unexpected financial liabilities.</p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- How It Works Section -->
-        <section class="content-section">
-            <h2 class="section-title"><i class="fas fa-cogs"></i> How It Works</h2>
-            <div class="process-steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Get Quote</h3>
-                    <p>Provide basic details about your business and workforce to get an instant quote.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Customize Plan</h3>
-                    <p>Select coverage options and add-ons based on your specific requirements.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Make Payment</h3>
-                    <p>Complete the payment process securely through multiple payment options.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Get Policy</h3>
-                    <p>Receive your policy document instantly via email.</p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- FAQ Section -->
-        <section class="content-section">
-            <h2 class="section-title"><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>What is Workmen Compensation Insurance?</span>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <p>Workmen Compensation Insurance is a policy that provides financial protection to employees in case of work-related injuries, disabilities, or occupational diseases. It covers medical expenses, disability benefits, and compensation for dependents in case of fatal accidents as mandated by the Workmen's Compensation Act, 1923.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Is Workmen Compensation Insurance mandatory?</span>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <p>Yes, as per the Workmen's Compensation Act, 1923, it is mandatory for employers to provide compensation to employees for work-related injuries or diseases. Having this insurance ensures compliance with legal requirements and protects businesses from potential legal liabilities.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>How is the premium calculated?</span>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <p>The premium is calculated based on factors such as the nature of your business, number of employees, total wage bill, and claims history. Higher risk industries typically have higher premium rates. You can use our premium calculator to get an estimate for your business.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>What is the claim process?</span>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <p>In case of an incident, you need to notify us immediately. Our claims team will guide you through the documentation process and assist in filing the claim. We aim to settle valid claims as quickly as possible to ensure your employees receive the support they need.</p>
-                </div>
-            </div>
-        </section>
-    </div>
-    
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-column">
-                <h3>Products</h3>
-                <ul>
-                    <li><a href="#">Motor Insurance</a></li>
-                    <li><a href="#">Health Insurance</a></li>
-                    <li><a href="#">Travel Insurance</a></li>
-                    <li><a href="#">Home Insurance</a></li>
-                    <li><a href="#">Business Insurance</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Support</h3>
-                <ul>
-                    <li><a href="#">Claims</a></li>
-                    <li><a href="#">Renew Policy</a></li>
-                    <li><a href="#">Download</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>About Us</h3>
-                <ul>
-                    <li><a href="#">Our Story</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Newsroom</a></li>
-                    <li><a href="#">Investor Relations</a></li>
-                    <li><a href="#">Corporate Governance</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Connect With Us</h3>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-                <p style="margin-top: 20px;">Toll Free: 1800 2666</p>
-                <p>Email: customer.care@icicilombard.com</p>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2023 ICICI Lombard General Insurance Company Ltd. All rights reserved.</p>
-        </div>
-    </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // FAQ toggle functionality
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const faqItem = question.parentElement;
-                faqItem.classList.toggle('active');
+        $(document).ready(function() {
+            // Form validation
+            $('#insuranceForm').on('submit', function(e) {
+                e.preventDefault();
+                
+                // Basic validation
+                let isValid = true;
+                const mobileNumber = $('#mobileNumber').val();
+                const email = $('#email').val();
+                const companyName = $('#companyName').val();
+                const pincode = $('#pincode').val();
+                
+                if (!mobileNumber) {
+                    isValid = false;
+                    $('#mobileNumber').addClass('is-invalid');
+                } else {
+                    $('#mobileNumber').removeClass('is-invalid');
+                }
+                
+                if (!email) {
+                    isValid = false;
+                    $('#email').addClass('is-invalid');
+                } else {
+                    $('#email').removeClass('is-invalid');
+                }
+                
+                if (!companyName) {
+                    isValid = false;
+                    $('#companyName').addClass('is-invalid');
+                } else {
+                    $('#companyName').removeClass('is-invalid');
+                }
+                
+                if (!pincode) {
+                    isValid = false;
+                    $('#pincode').addClass('is-invalid');
+                } else {
+                    $('#pincode').removeClass('is-invalid');
+                }
+                
+                if (isValid) {
+                    alert('Form submitted successfully!');
+                    // In a real application, you would submit the form data to a server here
+                }
             });
-        });
-
-        // Button functionality
-        document.querySelector('.btn-primary').addEventListener('click', () => {
-            alert('You will be redirected to the purchase page.');
-        });
-        
-        document.querySelector('.btn-secondary').addEventListener('click', () => {
-            alert('Premium calculator will open in a new window.');
+            
+            // Back button functionality
+            $('.back-btn').on('click', function() {
+                alert('Going back to previous page');
+                // In a real application, this would navigate back
+            });
+            
+            // Retrieve quote button functionality
+            $('.btn-outline-primary').on('click', function() {
+                alert('Retrieving your quote...');
+                // In a real application, this would fetch a saved quote
+            });
         });
     </script>
 </body>
 </html>
-```
-
-This implementation includes:
-
-1. Header Section:
-   · ICICI Lombard branding with logo
-   · Navigation menu with dropdown indicators
-   · Customer care information
-2. Hero Banner:
-   · Clear value proposition for workmen compensation insurance
-   · Prominent call-to-action buttons
-   · Relevant imagery
-3. Key Features Section:
-   · Highlighted benefits with icons
-   · Clean card layout
-4. Coverage Details:
-   · Comprehensive list of what's covered
-   · Checkmark indicators for better readability
-5. Benefits Section:
-   · Additional value propositions
-   · Visual representation of benefits
-6. Process Flow:
-   · Step-by-step explanation of how to get insured
-   · Visual process indicators
-7. FAQ Section:
-   · Interactive accordion for common questions
-   · Comprehensive answers to user queries
-8. Footer:
-   · Organized links to important sections
-   · Contact information and social media links
-
-The design follows ICICI Lombard's blue and orange color scheme and maintains a professional, trustworthy appearance appropriate for an insurance company. The page is fully responsive and includes interactive elements for enhanced user experience.
