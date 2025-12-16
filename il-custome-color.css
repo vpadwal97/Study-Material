@@ -1,0 +1,305 @@
+:root {
+    --white: white;
+
+    /* #838383 */
+    --color1-rgb: 131, 131, 131;
+    --colo1: rgba(var(--color1-rgb), 1);
+
+    /* #E15C28 */
+    --il-orange-rgb: 225, 92, 40;
+    --il-orange: rgba(var(--il-orange-rgb), 1);
+
+    /* #E71A1A */
+    --danger-rgba: 231, 26, 26;
+    --danger: rgba(var(--danger-rgba), 1);
+
+    /* #00ADFF  */
+    --blue-light-rgb: 0, 173, 255;
+    --blue-light: rgba(var(--blue-light-rgb), .12);
+
+    /* #FF5500  */
+    --pink-light-rgb: 255, 85, 0;
+    --pink-light: rgba(var(--pink-light-rgb), 0.04);
+
+    /* #00305b  */
+    --iblue-dark-rgb: 0, 48, 91;
+    --iblue-dark: rgba(var(--iblue-dark-rgb), 1);
+
+    /* #f8f6f6 */
+    --igray-light-rgb: 248, 246, 246;
+    --igray-light: rgba(var(--igray-light-rgb), 1);
+
+    /* #FFF9F6 */
+    --bs-iorange-light-rgb: 255, 249, 246;
+    --bs-iorange-light: rgba(var(--bs-iorange-light-rgb), 1);
+
+    /* #939393 */
+    --gray-rgb: 147, 147, 147;
+    --gray: rgba(var(--gray-rgb), 1);
+
+    /* #EDEDED */
+    --gray2-rgb: 237, 237, 237;
+    --gray2: rgba(var(--gray2-rgb), 1);
+
+    /* #fff2eb */
+    --light-pink-rgb: 255, 242, 235;
+    --light-pink: rgba(var(--light-pink-rgb), 1);
+
+    /* #e1f4fd */
+    --light-blue-rgb: 225, 244, 253;
+    --light-blue: rgba(var(--light-blue-rgb), 1);
+
+    /* #f5f6f6 */
+    --gray3-rgb: 245, 246, 246;
+    --gray3: rgba(var(--gray3-rgb), 1);
+
+    /* #F2F2F2 */
+    --light-il-orange-rgb: 242, 242, 242;
+    --light-il-orange: rgba(var(--light-il-orange-rgb), 1);
+
+    /* #a4c3d2 */
+    --bs-blue2-rgb: 164, 195, 210;
+    --bs-blue2: rgba(var(--bs-blue2-rgb), 1);
+
+    /* #014A7F */
+    --bs-iblue2-rgb: 1, 74, 127;
+    --bs-iblue2: rgba(var(--bs-iblue2-rgb), 1);
+
+
+    /* #ec6608 */
+    --bs-vivid-Orange-rgb: 236, 102, 8;
+    --bs-vivid-Orange: rgba(var(--bs-vivid-Orange-rgb), 1);
+
+    /* #ece9e9 */
+    --bs-pale-grey-rgb: 236, 233, 233;
+    --bs-pale-grey: rgba(var(--bs-pale-grey-rgb), 1);
+
+    /* #cacaca */
+    --bs-soft-gray-rgb: 202, 202, 202;
+    --bs-soft-gray: rgba(var(--bs-soft-gray-rgb), 1);
+
+    /* #ef7d00 */
+    --bs-vivid-orange-rgb: 239, 125, 0;
+    --bs-vivid-orange: rgba(var(--bs-vivid-orange-rgb), 1);
+
+    /* #8097ac */
+    --bs-cool-blue-gray-rgb: 128, 151, 172;
+    --bs-cool-blue-gray: rgba(var(--bs-cool-blue-gray-rgb), 1);
+
+    /* #f58220 */
+    --bs-pumpkin-orange-rgb: 245, 130, 32;
+    --bs-pumpkin-orange: rgba(var(--bs-pumpkin-orange-rgb), 1);
+
+    /* #ffd9c2 */
+    --bs-peach-rgb: 255, 217, 194;
+    --bs-peach: rgba(var(--bs-peach-rgb), 1);
+
+    /* #EC6625 */
+    --bs-orangeP-rgb: 236, 102, 37;
+    --bs-orangeP: rgba(var(--bs-orangeP-rgb), 1);
+
+    --orange-border: var(--bs-orangeP);
+
+
+    /* #_color_code */
+    /* --bs-namecolor-rgb: rgb_value_comma_saperated ; 
+    --bs-namecolor: rgba(var(--bs-namecolor-rgb), 1);  */
+
+
+
+
+    /* ADDED missing variables detected in your code */
+    --iblue-dark: rgba(var(--iblue-dark-rgb), 1);
+    --grandma-grey: #C9C9C9;
+    --carbon-grey: #575757;
+    /* corrected name for consistency */
+
+
+
+    --il-border-radius: 10px;
+
+}
+
+* {
+    /* font-family: Muli, sans-serif; */
+    font-family: Mulish, sans-serif !important
+}
+
+
+:root {
+    /* font variables start*/
+    --font-family: Mulish, sans-serif;
+    --font-family-material: Material Icons;
+    --font-family-material-outlined: Material Symbols Outlined;
+
+    --font-light: 300;
+    --font-regular: 400;
+    --font-xsregular: 500;
+    --font-medium: 600;
+    --font-semibold: 700;
+    --font-bold: 800;
+    --font-xsbold: 900;
+
+    --font-72: 72px;
+    --font-64: 64px;
+    --font-56: 56px;
+    --font-48: 48px;
+    --font-40: 40px;
+    --font-38: 38px;
+    --font-36: 36px;
+    --font-32: 32px;
+    --font-30: 30px;
+    --font-28: 28px;
+    --font-24: 24px;
+    --font-20: 20px;
+    --font-18: 18px;
+    --font-16: 16px;
+    --font-14: 14px;
+    --font-12: 12px;
+    --font-10: 10px;
+    /* font variables end*/
+
+    /* colors primary orange variables start*/
+    --primary-orange-50: #FFF2ED;
+    --primary-orange-100: #FFD6C8;
+    --primary-orange-200: #FFBCA1;
+    --primary-orange-300: #FF9D76;
+    --primary-orange-400: #FF7C43;
+    --primary-orange-500: var(--il-orange);
+    --primary-orange-600: #C74C01;
+    --primary-orange-700: #903501;
+    --primary-orange-800: #5A1E00;
+    --primary-orange-900: #2E0C00;
+    /* colors primary orange variables end*/
+
+    /* colors secondary maroon variables start*/
+    --secondary-maroon-50: #FFF2F0;
+    --secondary-maroon-100: #FCDAD7;
+    --secondary-maroon-200: #F3C0BB;
+    --secondary-maroon-300: #ECA49E;
+    --secondary-maroon-400: #E48882;
+    --secondary-maroon-500: #94292E;
+    --secondary-maroon-600: #AF2F31;
+    --secondary-maroon-700: #9F2529;
+    --secondary-maroon-800: #831A1E;
+    --secondary-maroon-900: #661517;
+    /* colors secondary maroon variables end*/
+
+    /* colors tertiary blue variables start*/
+    --secondary-blue-50: #EDF6FF;
+    --secondary-blue-100: #A2CEFF;
+    --secondary-blue-200: #78A4D5;
+    --secondary-blue-300: #517BAA;
+    --secondary-blue-400: #2B5580;
+    --secondary-blue-500: #053C6D;
+    --secondary-blue-600: #072949;
+    --secondary-blue-700: #0D2137;
+    --secondary-blue-800: #0A1624;
+    --secondary-blue-900: #000B15;
+    /* colors tertiary blue variables end*/
+
+    /* colors neutral warm variables start*/
+    --neutral-warm-gray-50: #F7F3F2;
+    --neutral-warm-gray-100: #E5E0DF;
+    --neutral-warm-gray-200: #CAC5C4;
+    --neutral-warm-gray-300: #ADA8A8;
+    --neutral-warm-gray-400: #8F8B8B;
+    --neutral-warm-gray-500: #736F6F;
+    --neutral-warm-gray-600: #565151;
+    --neutral-warm-gray-700: #3C3838;
+    --neutral-warm-gray-800: #272525;
+    --neutral-warm-gray-900: #161414;
+    /* colors neutral warm variables end*/
+
+    /* colors neutral cool Gray variables start*/
+    --cool-gray-50: #FAFAFA;
+    --cool-gray-100: #F5F5F5;
+    --cool-gray-200: #EEEEEE;
+    --cool-gray-300: #E0E0E0;
+    --cool-gray-400: #BDBDBD;
+    --cool-gray-500: #9E9E9E;
+    --cool-gray-600: #757575;
+    --cool-gray-700: #616161;
+    --cool-gray-800: #424242;
+    /* colors neutral cool Gray variables end*/
+
+    /* colors error variables start*/
+    --error-50: #FFF2EE;
+    --error-100: #FFD5CD;
+    --error-200: #FFB8AC;
+    --error-300: #FF9889;
+    --error-400: #FF7362;
+    --error-500: #F5503F;
+    --error-600: #E00903;
+    --error-700: #A30100;
+    --error-800: #670000;
+    --error-900: #360000;
+    /* colors error variables end*/
+
+    /* colors warning variables start*/
+    --warning-50: #FFF3E3;
+    --warning-100: #FFE2B7;
+    --warning-200: #FFD087;
+    --warning-300: #FFBC49;
+    --warning-400: #F1AE30;
+    --warning-500: #E49F04;
+    --warning-600: #BA8001;
+    --warning-700: #835900;
+    --warning-800: #4E3300;
+    --warning-900: #231500;
+    /* colors warning variables end*/
+
+    /* colors success variables start*/
+    --success-10: #F5FDEE;
+    --success-50: #DFFFE6;
+    --success-100: #83FDA9;
+    --success-200: #6AE593;
+    --success-300: #52CE7C;
+    --success-400: #38B867;
+    --success-500: #01A252;
+    --success-600: #038542;
+    --success-700: #03602E;
+    --success-800: #003C1B;
+    --success-900: #001F0A;
+    /* colors success variables end*/
+
+    /* text neutral dark variables start*/
+    --primary-text: #282828;
+    --global-black-1000: #020202;
+    --neutral-coolgray-700: #616161;
+    --neutral-coolgray-500: #9E9E9E;
+    --neutral-coolgray-400: #BDBDBD;
+    --neutral-coolgray-900: #212121;
+    /* text neutral dark variables end*/
+
+    /* text neutral light variables start*/
+    --neutral-light-coolgray-50: #FAFAFA;
+    --neutral-light-coolgray-100: #F5F5F5;
+    --neutral-light-coolgray-200: #EEEEEE;
+    --neutral-light-coolgray-300: #E0E0E0;
+    --neutral-light-coolgray-400: #BDBDBD;
+    --global-white: #FFF;
+    /* text neutral light variables end*/
+
+    /* text negative variables start*/
+    --error-red-700: #A30100;
+    --error-red-600: #E00903;
+    /* text negative variables end*/
+
+    /* text warning variables start*/
+    --warning-amber-600: #BA8001;
+    --warning-amber-500: #E49F04;
+    /* text warning variables end*/
+
+    /* text primary variables start*/
+    --primary-orange-600: #C74C01;
+    --primary-orange-500: #E3530F;
+    /* text primary variables end*/
+
+    /* text positive variables start*/
+    --sucess-green-700: #03602E;
+    --sucess-green-600: #038542;
+    --sucess-green-400: #09751B;
+    /* text positive variables end*/
+
+}
