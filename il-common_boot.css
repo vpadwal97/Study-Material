@@ -1117,109 +1117,164 @@
 /* ========================================================= */
 .text-gray {
   --bs-text-opacity: 1;
-  color: rgba(var(--gray-rgb), var(--bs-text-opacity)) !important;
+  --bs-body-color-rgb: var(--gray-rgb);
+  --bs-body-color: var(--gray);
+  color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-iblue-dark {
   --bs-text-opacity: 1;
-  color: rgba(var(--iblue-dark-rgb), var(--bs-text-opacity)) !important;
+  --bs-body-color-rgb: var(--iblue-dark-rgb);
+  --bs-body-color: var(--iblue-dark);
+  color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
 }
 
 .bg-iblue-dark {
-  --bs-body-color: var(--white);
+  --bs-bg-opacity: 1;
+  --bs-body-bg-rgb: var(--iblue-dark-rgb);
   --bs-body-bg: var(--iblue-dark);
-  background-color: var(--bs-body-bg);
+  background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-gray3 {
-  --bs-body-color: var(--white);
+  --bs-bg-opacity: 1;
+  --bs-body-bg-rgb: var(--gray3-rgb);
   --bs-body-bg: var(--gray3);
-  background-color: var(--bs-body-bg);
+  background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-vivid-orange {
-  --bs-body-color: var(--white);
+  --bs-bg-opacity: 1;
+  --bs-body-bg-rgb: var(--bs-vivid-orange-rgb);
   --bs-body-bg: var(--bs-vivid-orange);
-  background-color: var(--bs-body-bg);
+  background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-il-orange {
-  --bs-body-color: var(--white);
+  --bs-bg-opacity: 1;
+  --bs-body-bg-rgb: var(--il-orange-rgb);
   --bs-body-bg: var(--il-orange);
-  background-color: var(--bs-body-bg);
+  background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .text-vivid-orange {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-vivid-orange-rgb), var(--bs-text-opacity)) !important;
+  --bs-body-color-rgb: var(--bs-vivid-orange-rgb);
+  --bs-body-color: var(--bs-vivid-orange);
+  color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-cool-blue-gray {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-cool-blue-gray-rgb), var(--bs-text-opacity)) !important;
+  --bs-body-color-rgb: var(--bs-cool-blue-gray-rgb);
+  --bs-body-color: var(--bs-cool-blue-gray);
+  color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-il-orange {
   --bs-text-opacity: 1;
-  color: rgba(var(--il-orange-rgb), var(--bs-text-opacity)) !important;
+  --bs-body-color-rgb: var(--il-orange-rgb);
+  --bs-body-color: var(--il-orange);
+  color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
 }
 
 .bg-ilorange-light {
-  --bs-body-color: var(--white);
+  --bs-bg-opacity: 1;
+  --bs-body-bg-rgb: var(--light-il-orange-rgb);
   --bs-body-bg: var(--light-il-orange);
-  background-color: var(--bs-body-bg);
+  background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-iblue2 {
-  --bs-body-color: var(--white);
+  --bs-bg-opacity: 1;
+  --bs-body-bg-rgb: var(--blue-light-rgb);
   --bs-body-bg: var(--blue-light);
-  background-color: var(--bs-body-bg);
+  background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .text-orangeP {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-orangeP-rgb), var(--bs-text-opacity)) !important;
+  --bs-body-color-rgb: var(--bs-orangeP-rgb);
+  --bs-body-color: var(--bs-orangeP);
+  color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-iblue2 {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-iblue2-rgb), var(--bs-text-opacity)) !important;
+  --bs-body-color-rgb: var(--bs-iblue2-rgb);
+  --bs-body-color: var(--bs-iblue2);
+  color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-white {
+  --bs-text-opacity: 1;
+  --bs-body-color-rgb: var(--bs-white-rgb);
+  --bs-body-color: var(--bs-white);
+  color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-dark {
+  --bs-text-opacity: 1;
+  --bs-body-color-rgb: var(--bs-dark-rgb);
+  --bs-body-color: var(--bs-dark);
+  color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
+}
+
+.bg-white {
+  --bs-bg-opacity: 1;
+  --bs-body-bg-rgb: var(--bs-white-rgb);
+  --bs-body-bg: var(--bs-white);
+  background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-dark {
+  --bs-bg-opacity: 1;
+  --bs-body-bg-rgb: var(--bs-dark-rgb);
+  --bs-body-bg: var(--bs-dark);
+  background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
+
 }
 
 .bg-pink-light {
-  --bs-body-color: var(--white);
+  --bs-bg-opacity: 1;
+  --bs-body-bg-rgb: var(--pink-light-rgb);
   --bs-body-bg: var(--pink-light);
-  background-color: var(--bs-body-bg);
+  background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-igray-light {
-  --bs-body-color: var(--white);
+  --bs-bg-opacity: 1;
+  --bs-body-bg-rgb: var(--igray-light-rgb);
   --bs-body-bg: var(--igray-light);
-  background-color: var(--bs-body-bg);
+  background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-iorange-light {
-  --bs-body-color: var(--white);
+  --bs-bg-opacity: 1;
+  --bs-body-bg-rgb: var(--bs-iorange-light-rgb);
   --bs-body-bg: var(--bs-iorange-light);
-  background-color: var(--bs-body-bg);
+  background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-light-pink {
-  --bs-body-color: var(--white);
+  --bs-bg-opacity: 1;
+  --bs-body-bg-rgb: var(--light-pink-rgb);
   --bs-body-bg: var(--light-pink);
-  background-color: var(--bs-body-bg);
+  background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-light-blue {
-  --bs-body-color: var(--white);
+  --bs-bg-opacity: 1;
+  --bs-body-bg-rgb: var(--light-blue-rgb);
   --bs-body-bg: var(--light-blue);
-  background-color: var(--bs-body-bg);
+  background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-pale-grey {
-  --bs-body-color: var(--white);
+  --bs-bg-opacity: 1;
+  --bs-body-bg-rgb: var(--bs-pale-grey-rgb);
   --bs-body-bg: var(--bs-pale-grey);
-  background-color: var(--bs-body-bg);
+  background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .border-peach {
