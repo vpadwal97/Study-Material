@@ -832,7 +832,7 @@ li.marker-none::marker {
     }
 
     .read-more-icon::after {
-        content: url('/assets/images/readmore.svg');
+        content: url('../images/readmore.svg');
         display: inline-block;
         transition: transform .3s ease;
     }
@@ -935,7 +935,8 @@ li.marker-none::marker {
 /* ===============================
    Chrome, Edge, Safari
    =============================== */
-
+input:-internal-autofill-selected,
+textarea:-internal-autofill-selected,
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -948,6 +949,7 @@ select:-webkit-autofill:focus {
     -webkit-text-fill-color: var(--bs-body-color)!important;
     /* text color */
     caret-color: var(--bs-body-color)!important;
+    color: var(--bs-body-color)!important;
     /* cursor */
     box-shadow: 0 0 0px 1000px var(--bs-body-bg) inset!important;
     /* background */
