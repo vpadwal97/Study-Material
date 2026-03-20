@@ -3033,6 +3033,8 @@ useCallback : used to memoizes the function defination, prevent it from recreati
 
 props (properties) : read only arguments passed from parent to child component , props are immutable objects, they allow data flow in unidirectional way 
  
+Re-rendering in React JS is when a component updates its output (UI) in response to changes in state or props. React re-executes the component function, compares the new JSX with the previous using the Virtual DOM, and updates only what has actually changed in the real DOM. Optimizations like React.memo, useMemo, and useCallback help prevent unnecessary re-renders.
+
 
 Key Features of React
 Standard Definition
