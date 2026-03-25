@@ -3006,6 +3006,9 @@ Dependency Array Behavior:
 [] (Empty array): Runs only once after the initial render (like componentDidMount).
 No array provided: Runs after every render (initial and updates).
 [value1, value2]: Runs after the initial render and only re-runs if any of the values in the array change.
+
+I use useEffect for API calls, subscriptions, and syncing state with external systems. I also make sure to clean up effects to avoid memory leaks, especially in event listeners or intervals.
+
 //syntax
 useEffect(() => {
 	console.log("sideeffects");
