@@ -3027,6 +3027,7 @@ useEffect(() => {
   };
 }, []);
 
+Prop drilling is a situation in React where we pass data from a parent component to a deeply nested child component through multiple intermediate components, even if those intermediate components don’t need the data.
 
 Context API provides a way to pass a data through the component tree without having to pass data manually at every level 
 useref return a mutable object that persist across render, commonly used to access DOM element or to store values that dont trigger rerender
