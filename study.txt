@@ -6785,6 +6785,7 @@ str2
 
 
 //Hot Module Replacement (HMR)
+HMR is a tool that updates your code in the browser instantly without refreshing the page.
 Hot Module Replacement (HMR) allows modules to be exchanged, added, or removed in a running application without a full page reload, improving developer experience by speeding up feedback loops and retaining application state.
  
 // Keys in React (especially in Lists)
