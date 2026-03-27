@@ -3027,7 +3027,6 @@ useEffect(() => {
   };
 }, []);
 
-Prop drilling is a situation in React where we pass data from a parent component to a deeply nested child component through multiple intermediate components, even if those intermediate components don’t need the data.
 
 Context API provides a way to pass a data through the component tree without having to pass data manually at every level 
 useref return a mutable object that persist across render, commonly used to access DOM element or to store values that dont trigger rerender
@@ -6732,6 +6731,8 @@ interceptors : they are functions which axios call before sending a request or a
 
 
 What are Axios Interceptors?
+An Axios Interceptor is a "middleman" for your network requests. It allows you to run a piece of code automatically before a request is sent or after a response is received.
+
 Axios interceptors are functions that allow you to intercept requests or responses before they are handled by then() or catch()
 useful for:
 axios Interceptors : Interceptors allow us to run our code or modify requests/responses before they are handled by then or catch.
@@ -6830,6 +6831,10 @@ API Gateway : it act as entry point(intermidate server) between the client appla
 Hypertext Transfer Protocol(http) : not secure data is transfer in plain text , by default uses port 80 , 
 Hypertext Transfer Protocol Secure(https) : uses SSL/TLS encryption so its secure , by default uses port 443 , 
 
+Path Parameter: A variable segment of the URL path itself, used to identify a specific resource or entity.
+Example: https://example.com (where 123 is the parameter identifying a specific user).
+Query Parameter: A key-value pair appended to the end of a URL after a ?, used to filter, sort, or search within a resource.
+Example: https://example.com (where status=active filters the list of users)
 
 path parameters : used to identify specific resource //   url/product/102 single product detail
 const {id} = useParams();
