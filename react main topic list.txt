@@ -1,0 +1,210 @@
+In React (Frontend) development, strong knowledge and hands-on experience are expected in the following areas:
+
+
+
+
+JavaScript fundamentals
+React.js
+State management
+API integration
+UI development
+Debugging and performance optimization
+
+
+
+
+We are sharing the preparation points below. Please go through them thoroughly.
+
+
+
+
+Technical Skills (Very Important in Interviews)
+
+1. JavaScript Fundamentals
+
+Variables (var, let, const)
+Data types
+Functions and arrow functions
+Closures
+Promises
+Async / Await
+ES6+ features (spread, destructuring, modules)
+Event handling
+
+
+
+
+2. React Basics
+
+What is React
+Components (Functional & Class components)
+JSX
+Props and State
+Virtual DOM
+Component lifecycle methods
+
+
+
+
+3. React Hooks
+
+useState
+useEffect
+useContext
+useRef
+useMemo
+useCallback
+
+
+
+
+Understanding how hooks manage state and side effects.
+
+
+
+
+4. State Management
+
+Local state
+Context API
+Redux (basics)
+Redux Toolkit
+
+
+
+
+5. Routing
+
+React Router
+Navigation between pages
+Dynamic routing
+Route protection
+
+
+
+
+
+
+
+6. API Integration
+
+Fetch / Axios
+REST APIs
+Handling API responses
+Error handling
+Loading states
+
+
+
+
+
+
+
+7. UI Development
+
+
+
+
+Responsive design
+CSS / SCSS
+Tailwind CSS / Bootstrap
+Reusable components
+Forms and validatio
+
+
+
+
+8. Performance Optimization
+
+Memoization
+Lazy loading
+Code splitting
+Avoiding unnecessary re-renders
+
+
+
+
+9. Testing (Basics)
+
+Unit testing
+Jest
+React Testing Library
+
+
+
+
+10. Version Control
+
+Git basics
+Branching
+Merge / Rebase
+
+
+
+
+Project Discussion (Very Important)
+
+Candidates should be ready to explain:
+
+
+
+
+Project architecture
+Component structure
+State management approach
+API integration
+UI challenges
+Performance optimization
+Error handling
+Deployment process
+
+
+
+
+
+
+
+Soft Skills (Very Important in Interviews)
+
+Communic project experience clearly
+Client interaction
+Team collaboration
+Problem-solving approach
+Time management
+
+
+
+From: Anushri <anushri.dabholkar@cloverinfotech.com>
+To: Vishwanath <vishwanath.padwal@cloverinfotech.com>
+Cc: Sandesh <sandesh.pawaskar@cloverinfotech.com>; tina <tina.rathod@cloverinfotech.com>
+Date: Tuesday, 31 March 2026 1:13 PM IST
+Subject: Welcome to Clover Infotech – React Team
+
+
+
+Hi Vishwanath,
+
+
+
+
+Welcome to the Clover Infotech – React Team.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bonus Skills (Good to Have)
+
+TypeScript
+GraphQL
+Web performance optimization
+CI/CD basics
+Deployment (Netlify / Vercel / AWS)
