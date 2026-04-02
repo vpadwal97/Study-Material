@@ -1,8 +1,12 @@
 https://maps.googleapis.com/maps/api/geocode/json?latlng=19.0748,72.8856&key=AIzaSyCAzm3cPg8CTwxtwvbiAiksaBX0HfZOcpg
 
-Good morning/afternoon, my name is [name]. I completed my B.E. from [College] and have 2.6 years of experience in web development. For the past two years, I've been primarily focused on front-end development using React.
+My name is [your_name], and I have around 3 years of experience in frontend development, primarily working with React.js.
 
-In my previous role at OctaShop, I was responsible for building and maintaining responsive user interfaces. I implemented key features such as a dynamic form builder and a role-based UI. I also have hands-on experience using Redux for state management and integrating with REST APIs.
+In my previous role at [previous_company_name], I was responsible for developing and maintaining scalable and responsive user interfaces. I worked on features like dynamic forms, role-based UI rendering, and integrated REST APIs efficiently using tools like Axios.
+
+I also have hands-on experience with Redux Toolkit for managing global state, especially for features like authentication and cart management in e-commerce applications.
+
+Overall, I focus on writing clean, maintainable code and optimizing performance to deliver a smooth user experience.
 
 
 
