@@ -8495,3 +8495,10 @@ Wildcards & Patterns
 /blog/:slug+ matches /blog/my-post, but not just /blog. 
 
 
+
+Feature 	Normal Script				async							defer
+Download	Blocks HTML parsing			Background (Parallel)			Background (Parallel)
+Execution	Immediate (Blocks parsing)	Immediately after download		After HTML is fully parsed
+Order		Order of appearance			Unpredictable (Load-first)		Guaranteed (Document order)
+DOM Access	Only elements above it		Potentially incomplete			Full DOM access guaranteed
+
