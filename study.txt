@@ -8455,3 +8455,43 @@ process.env.NEXT_PUBLIC_somedata
 import.meta.env.VITE_somedata
 process.env.somedata
 process.env.REACT_APP_somedata
+
+
+
+
+Middware 
+an intermediate software layer that executes logic on the Edge Runtime before a request is completed.
+Edge Runtime is a lightweight server-side execution environment designed for high-performance, low-latency computing
+import { NextResponse } from 'next/server'
+import type { NextRequest } from 'next/server'
+export function middleware(request: NextRequest) {
+  console.log("I am running before the page loads!")
+  // This line tells Next.js: "Everything is fine, proceed to the page."
+  return NextResponse.next()
+}
+Continue: NextResponse.next() (Let them in).
+Redirect: NextResponse.redirect() (Send them to the login page).
+Rewrite: NextResponse.rewrite() (Show them the dashboard but keep the URL the same—useful for A/B testing).
+
+export const config = {
+  matcher: [
+    /*
+     * Match all request paths except for the ones starting with:
+     * - api (API routes)
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - favicon.ico (favicon file)
+     */
+    '/((?!api|_next/static|_next/image|favicon.ico).*)',
+  ],
+}
+
+Wildcards & Patterns
+:path (Named Parameter): Matches one segment.
+/about/:path matches /about/team but not /about/team/projects.
+* (Zero or More): Matches everything after a certain point.
+/dashboard/:path* matches /dashboard, /dashboard/settings, and /dashboard/settings/profile.
++ (One or More): Requires at least one segment.
+/blog/:slug+ matches /blog/my-post, but not just /blog. 
+
+
