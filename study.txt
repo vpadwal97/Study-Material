@@ -939,6 +939,40 @@ If a dish needs time (like boiling water), he puts it aside (async task → queu
 
 When free, he checks pending dishes (event loop picks from the queue).
 
+console.log("1"); 
+Promise.resolve().then(() => {
+    console.log("2");
+  setTimeout(() => console.log("3"), 0);
+});
+
+setTimeout(() => {
+    console.log("4");
+  Promise.resolve().then(() => console.log("5"));
+}, 0);
+
+Promise.resolve().then(() => {
+    console.log("6");
+  setTimeout(() => console.log("7"), 0);
+});
+
+setTimeout(() => {
+    console.log("8");
+  Promise.resolve().then(() => console.log("9"));
+}, 0);
+console.log("10"); 
+
+op:-
+1
+10
+2
+6
+4
+5
+8
+9
+3
+7
+
 ✅ Code Example
 console.log("Start");
 
