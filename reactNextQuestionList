@@ -1,0 +1,147 @@
+Here is your **final, clean, complete, de-duplicated interview question list** for a **3-year React + Next.js developer** — fully organized and copy-friendly 👇
+
+---
+
+# ✅ **COMPLETE INTERVIEW QUESTION LIST (3-Year React / Next.js)**
+
+---
+
+## ✅ **JavaScript Fundamentals**
+
+```txt
+- Difference between var, let, and const. When would you use each?
+- What is hoisting in JavaScript?
+- What is Temporal Dead Zone (TDZ)?
+- Difference between == and ===?
+- Difference between synchronous and asynchronous JavaScript.
+- Explain the event loop and how async code works in JavaScript.
+- What are promises?
+- Difference between async/await and .then()?
+- How do promises and async/await work internally?
+- What is closure in JavaScript? (with coding example)
+- Explain shallow copy vs deep copy. How do you create them?
+- What is debouncing and throttling? Where would you use them?
+- Difference between arrow functions and normal functions.
+- What is 'this' keyword in JavaScript?
+- Explain call(), apply(), and bind().
+- What is currying?
+- What is memoization?
+- How does garbage collection work in JavaScript?
+```
+
+---
+
+## ✅ **JavaScript Coding / Problem Solving**
+
+```txt
+- Given:
+  let arr = [-3, 6, -3, 90], target = 0
+  Write code using only ONE loop to find a pair whose sum equals target.
+```
+
+---
+
+## ✅ **DOM & Browser Concepts**
+
+```txt
+- Explain event delegation and why it is useful.
+- How to hide or secure API calls from the Network tab?
+```
+
+---
+
+## ✅ **React Fundamentals**
+
+```txt
+- Difference between functional and class components.
+- Why are hooks preferred?
+- What is Virtual DOM?
+- What is reconciliation in React?
+- How does React update the DOM efficiently?
+- What are keys in React lists? Why are they important?
+- What is state vs props?
+- How does data flow in React?
+- What are controlled vs uncontrolled components?
+- What is lifting state up?
+- What are React fragments?
+```
+
+---
+
+## ✅ **React Hooks**
+
+```txt
+- What are React hooks?
+- Explain useEffect — when does it run and how dependency array works?
+- How does useEffect hook work internally?
+- What is useMemo vs useCallback?
+- What is useDeferredValue hook?
+- When have you created custom hooks? Why and how?
+- What is Context API and when to use it?
+```
+
+---
+
+## ✅ **React Performance Optimization**
+
+```txt
+- What is React.memo and when to use it?
+- How do you prevent unnecessary re-renders?
+- What causes re-render in React?
+- How do you optimize React performance?
+- How does React batching work?
+```
+
+---
+
+## ✅ **Next.js (VERY IMPORTANT)**
+
+```txt
+- Difference between React and Next.js.
+- What is App Router vs Pages Router?
+- What is SSR (Server-Side Rendering)?
+- What is SSG (Static Site Generation)?
+- What is CSR (Client-Side Rendering)?
+- Difference between SSR, SSG, and CSR.
+- What are Server Components vs Client Components?
+- What is "use client" directive in Next.js?
+- What are API Routes in Next.js?
+- What is middleware in Next.js?
+- How does routing work in Next.js?
+- What is dynamic routing?
+```
+
+---
+
+## ✅ **Authentication & Security**
+
+```txt
+- What is your authentication flow?
+- How does JWT token authentication work?
+- Where do you store JWT token — cookie or localStorage? Why?
+- Difference between access token and refresh token.
+- What are HttpOnly cookies and how are they used?
+```
+
+---
+
+## ✅ **Git / Version Control**
+
+```txt
+- What is the difference between git merge and git rebase?
+- What is git stash?
+- What is cherry-pick in git?
+- How do you resolve merge conflicts?
+```
+
+---
+
+## ✅ **Architecture & Real Project Design**
+
+```txt
+- What is Backend for Frontend (BFF)?
+- How do you structure a large React application?
+- How do you handle API errors globally?
+- How do you manage loading and error states?
+- What are axios interceptors and how have you used them?
+- What are utility functions and when to use them over hooks?
