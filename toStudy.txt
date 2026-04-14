@@ -1,0 +1,4 @@
+Database: PostgreSQL (Industry standard for relational data).
+ORM: Prisma (Modern, type-safe database access for TS).
+API Pattern: GraphQL (Increasingly popular for Next.js) or REST.
+Authentication: Supabase or Auth0 (To avoid building from scratch)
