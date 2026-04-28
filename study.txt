@@ -8485,6 +8485,13 @@ vite
 CRA
 "build:prod":"env-cmd -f .env.prod react-scripts build"
 
+| Framework | Build command   | Output folder | Production run    |
+| --------- | --------------- | ------------- | ----------------- |
+| CRA       | `npm run build` | `build/`      | `serve -s build`  |
+| Vite      | `npm run build` | `dist/`       | `npm run preview` |
+| Next.js   | `npm run build` | `.next/`      | `npm start`       |
+	
+
 .env.prod
 NEXT_PUBLIC_somedata="someData"
 VITE_somedata="someData"
@@ -8543,3 +8550,27 @@ Execution	Immediate (Blocks parsing)	Immediately after download		After HTML is f
 Order		Order of appearance			Unpredictable (Load-first)		Guaranteed (Document order)
 DOM Access	Only elements above it		Potentially incomplete			Full DOM access guaranteed
 
+HTTP-only cookies Automatically send cookies with requests
+fetch("/api/profile", { credentials: "include" });
+axios.get("/api/profile", { withCredentials: true });
+
+1. Create React App (CRA)
+npx create-react-app my-app
+2. Create a new Vite React project
+npm create vite@latest my-react-app
+3. Next.js
+npx create-next-app@latest my-next-app
+
+React Router:-
+<RouterProvider router={router} />
+import Layout from "../layout/Layout";
+import Home from "../pages/Home";
+import Dashboard from "../pages/Dashboard";
+
+export const routes = [ { path: "/", element: <Layout />, children: [ { index: true, element: <Home /> }, { path:  "dashboard", element: <Dashboard /> } ] } ];
+
+Navigations 
+const navigate = useNavigate();
+<button onClick={() => navigate("/profile", { state: { name: "John", age: 25 } }) } >
+  Go to Profile
+</button>
