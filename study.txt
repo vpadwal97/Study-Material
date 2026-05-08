@@ -3083,6 +3083,233 @@ props (properties) : read only arguments passed from parent to child component ,
  
 Re-rendering in React JS is when a component updates its output (UI) in response to changes in state or props. React re-executes the component function, compares the new JSX with the previous using the Virtual DOM, and updates only what has actually changed in the real DOM. Optimizations like React.memo, useMemo, and useCallback help prevent unnecessary re-renders.
 
+## 🧠 What is React Fiber?
+
+**React Fiber** is the internal reconciliation engine of React (introduced in React 16) that allows React to break rendering work into small units and manage updates more efficiently.
+
+👉 In simple terms:
+
+> Fiber is React’s “reimplementation” of its core rendering system to make UI updates faster, smoother, and interruptible.
+
+---
+
+# 🚀 Why was Fiber introduced?
+
+Before Fiber (old React “Stack Reconciler”):
+
+### ❌ Problems:
+
+* Rendering was **synchronous and blocking**
+* Large updates could freeze the UI
+* No way to pause or prioritize work
+* Poor responsiveness for animations, typing, scrolling
+
+👉 Example problem:
+If React was rendering a big list, the browser could become unresponsive until it finished.
+
+---
+
+# 🧩 What problem does Fiber solve?
+
+Fiber solves:
+
+### 1. 🛑 Blocking rendering → non-blocking rendering
+
+React can **pause work**, do something more important, and resume later.
+
+---
+
+### 2. ⚡ Prioritization
+
+Some updates are more important than others:
+
+* Typing → high priority
+* Background data fetch → low priority
+
+---
+
+### 3. 🔄 Incremental rendering
+
+Instead of doing everything at once:
+
+> React splits work into chunks (units of work)
+
+---
+
+### 4. 🎯 Better scheduling
+
+React can decide:
+
+* what to render first
+* what to delay
+
+---
+
+# ⚙️ What are Render and Commit phases?
+
+React rendering is split into two phases:
+
+---
+
+## 1. 🧠 Render Phase (can be interrupted)
+
+This is where React:
+
+* Calculates what should change
+* Builds a new **work-in-progress tree**
+* Runs reconciliation (diffing)
+
+👉 Important:
+
+* No DOM changes happen here
+* Can be paused/restarted
+
+---
+
+## 2. 🧱 Commit Phase (cannot be interrupted)
+
+React:
+
+* Applies changes to DOM
+* Runs effects (`useEffect`)
+* Updates refs
+
+👉 This must be **fast and synchronous**
+
+---
+
+# 🌳 Current Tree vs Work-in-Progress Tree
+
+## 🟢 Current Tree
+
+* Represents the **UI currently on screen**
+* Stable version of the component tree
+
+---
+
+## 🟡 Work-in-Progress Tree
+
+* A **new version being built in memory**
+* Contains updates not yet shown
+
+---
+
+## 🔁 How it works
+
+1. React copies current tree → creates WIP tree
+2. Applies updates on WIP tree
+3. Once ready → swaps it with current tree
+
+```text id="fiber1"
+Current Tree  → displayed UI
+WIP Tree      → being built
+```
+
+---
+
+# ⚡ What is Concurrent Rendering?
+
+Concurrent rendering is React’s ability to:
+
+> Prepare multiple versions of UI and switch between them based on priority.
+
+### Features:
+
+* interrupt rendering
+* pause/resume work
+* keep UI responsive
+* avoid blocking main thread
+
+---
+
+# 🧠 Is React multi-threaded? (trick question)
+
+❌ No — React is NOT truly multi-threaded.
+
+### Why?
+
+* JavaScript runs on a **single main thread**
+* React cannot create real OS threads
+
+---
+
+## ⚡ Then how does it feel concurrent?
+
+React uses:
+
+* scheduling
+* time slicing
+* yielding control to browser
+
+👉 So it simulates concurrency, not real parallel threads.
+
+---
+
+# ⏸️ What is “interruptible rendering”?
+
+This is Fiber’s key feature.
+
+👉 It means:
+
+> React can pause rendering work, let the browser handle urgent tasks (like input/animation), then resume later.
+
+---
+
+### Example:
+
+While rendering a large list:
+
+* user types input
+* React pauses rendering list
+* handles input immediately
+* resumes rendering list later
+
+---
+
+# 🧭 How does React prioritize updates?
+
+React assigns **priority levels (lanes)**:
+
+### High priority:
+
+* typing
+* clicking
+* animations
+
+### Low priority:
+
+* data fetching
+* background rendering
+
+👉 React schedules high priority updates first.
+
+---
+
+# 🧠 Simple mental model
+
+Think of React Fiber as:
+
+```text id="fiber2"
+A smart task manager that:
+- splits rendering into small tasks
+- prioritizes important updates
+- pauses/resumes work
+- keeps UI responsive
+```
+
+---
+
+# 🔥 One-line summaries
+
+* **Fiber:** React’s internal rendering engine
+* **Problem solved:** blocking UI updates
+* **Render phase:** compute changes (interruptible)
+* **Commit phase:** apply changes (non-interruptible)
+* **Concurrent rendering:** scheduling + interruptible UI work
+* **Not multi-threaded:** JS is single-threaded
+* **Interruptible rendering:** pause/resume rendering work
+* **Current tree:** UI on screen
+* **WIP tree:** UI being prepared
 
 Key Features of React
 Standard Definition
