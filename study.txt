@@ -18,7 +18,17 @@ Currently, I’m working at Clover Infotech, contributing to an enterprise-level
 Overall, I enjoy building clean, scalable frontend systems and solving real-world UI challenges, and I’m now looking for opportunities where I can work on more complex products and grow as a frontend engineer.
 
 
+Hi, I’m Vishwanath. I’m a frontend developer with around 3 years of experience, primarily working with React.js.
 
+In my previous role at OctaShop, I was responsible for developing and maintaining complex and scalable user interfaces. I worked extensively with Redux for state management and Axios for API integration.
+
+I’ve also worked on domains like e-commerce and banking, where I built features like role-based UI and dynamic multi-step forms with validations.
+
+I have hands-on experience with tools like React DevTools and Redux DevTools for debugging and performance optimization.
+
+Overall, I focus on building clean, reusable components and handling real-world challenges like API integration, authentication, and performance optimization.
+
+I’m currently looking for opportunities where I can contribute to building scalable applications and continue growing as a developer.
 
 What is hoisting?
 hoisting is default behaviour in js to move variable and function decliration to the top of the scope before code execution ie. during compiletime , only decliration are hoisted not the initializations , var is hoisted initialized as undefined where as let and const are hoistd but remain uninitialized in Temporal Dead Zone.
