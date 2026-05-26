@@ -3037,6 +3037,8 @@ automatic batching : group sate updates for better performance
 new hooks : useId,useTransition, useDeferredValue, useTransitions 
 suspance improvement
 
+Hooks are internally stored in a linked-list structure on the Fiber node, and React relies on the exact hook call order during every render. Conditional hooks can change this order, causing React to associate the wrong state or effect with the wrong hook node.
+
 react hooks : are special function that let you use state , lifecycle menthos and other react features in function component 
 Custom Hoooks : custom hooks in React is special rusable JS functions start with use", and allow you to reuse the stateful logic across multiple components 
 we can create custome hooks , 
