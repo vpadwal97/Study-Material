@@ -7,7 +7,7 @@ Overall, I focus on writing clean, maintainable code and optimizing performance 
 
 or 
 
-Hi, I’m Vishwanath. I’m a frontend developer with around 3+ years of experience, primarily working with React.js and Next.js.
+Hi, I’m [your_name]. I’m a frontend developer with around 3+ years of experience, primarily working with React.js and Next.js.
 
 I started my career at OctaShop, where I worked on multiple eCommerce applications like onlineShopping, CKC Jewelers, and Jamboshop. There, I was mainly responsible for building scalable UI components, integrating APIs, and managing application state using Redux Toolkit. I also worked on a banking application where I implemented role-based UI and built dynamic multi-step forms for complex user workflows.
 
@@ -18,7 +18,7 @@ Currently, I’m working at Clover Infotech, contributing to an enterprise-level
 Overall, I enjoy building clean, scalable frontend systems and solving real-world UI challenges, and I’m now looking for opportunities where I can work on more complex products and grow as a frontend engineer.
 
 
-Hi, I’m Vishwanath. I’m a frontend developer with around 3 years of experience, primarily working with React.js.
+Hi, I’m [your_name]. I’m a frontend developer with around 3 years of experience, primarily working with React.js.
 
 In my previous role at OctaShop, I was responsible for developing and maintaining complex and scalable user interfaces. I worked extensively with Redux for state management and Axios for API integration.
 
