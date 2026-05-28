@@ -1,34 +1,14 @@
 https://maps.googleapis.com/maps/api/geocode/json?latlng=19.0748,72.8856&key=AIzaSyCAzm3cPg8CTwxtwvbiAiksaBX0HfZOcpg
 
-My name is [your_name], and I have around 3 years of experience in frontend development, primarily working with React.js.
-In my previous role at [previous_company_name], I was responsible for developing and maintaining scalable and responsive user interfaces. I worked on features like dynamic forms, role-based UI rendering, and integrated REST APIs efficiently using tools like Axios.
-I also have hands-on experience with Redux Toolkit for managing global state, especially for features like authentication and cart management in e-commerce applications.
-Overall, I focus on writing clean, maintainable code and optimizing performance to deliver a smooth user experience.
+Hi, my name is [name]. I’m a web developer with around 3 years of experience, primarily working with React.js.
 
-or 
+In my previous role at OctaShop, I was responsible for developing and maintaining complex and scalable UI applications. I have hands-on experience with Redux for global state management and Axios for REST API integration.
 
-Hi, I’m [your_name]. I’m a frontend developer with around 3+ years of experience, primarily working with React.js and Next.js.
+I’ve also worked on banking domain projects where I developed role-based UI and dynamic multi-step forms with validations.
 
-I started my career at OctaShop, where I worked on multiple eCommerce applications like onlineShopping, CKC Jewelers, and Jamboshop. There, I was mainly responsible for building scalable UI components, integrating APIs, and managing application state using Redux Toolkit. I also worked on a banking application where I implemented role-based UI and built dynamic multi-step forms for complex user workflows.
+Additionally, I have experience using React DevTools and Redux DevTools for debugging and performance optimization.
 
-Over time, I focused a lot on performance optimization — using techniques like lazy loading, code splitting, and analyzing performance through Lighthouse, which helped improve page load times significantly. I also took ownership of frontend modules in a small team, ensuring code quality and consistency.
-
-Currently, I’m working at Clover Infotech, contributing to an enterprise-level insurance application for ICICI Lombard. Here, I’ve been working on dynamic forms, validations, and improving overall UI consistency and user experience.
-
-Overall, I enjoy building clean, scalable frontend systems and solving real-world UI challenges, and I’m now looking for opportunities where I can work on more complex products and grow as a frontend engineer.
-
-
-Hi, I’m [your_name]. I’m a frontend developer with around 3 years of experience, primarily working with React.js.
-
-In my previous role at OctaShop, I was responsible for developing and maintaining complex and scalable user interfaces. I worked extensively with Redux for state management and Axios for API integration.
-
-I’ve also worked on domains like e-commerce and banking, where I built features like role-based UI and dynamic multi-step forms with validations.
-
-I have hands-on experience with tools like React DevTools and Redux DevTools for debugging and performance optimization.
-
-Overall, I focus on building clean, reusable components and handling real-world challenges like API integration, authentication, and performance optimization.
-
-I’m currently looking for opportunities where I can contribute to building scalable applications and continue growing as a developer.
+Overall, I enjoy building clean and reusable components, solving real-world frontend challenges, and continuously improving user experience and application performance..
 
 What is hoisting?
 hoisting is default behaviour in js to move variable and function decliration to the top of the scope before code execution ie. during compiletime , only decliration are hoisted not the initializations , var is hoisted initialized as undefined where as let and const are hoistd but remain uninitialized in Temporal Dead Zone.
