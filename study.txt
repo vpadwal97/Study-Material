@@ -1,14 +1,11 @@
 https://maps.googleapis.com/maps/api/geocode/json?latlng=19.0748,72.8856&key=AIzaSyCAzm3cPg8CTwxtwvbiAiksaBX0HfZOcpg
 
 Hi, my name is [name]. I’m a web developer with around 3 years of experience, primarily working with React.js.
-
 In my previous role at OctaShop, I was responsible for developing and maintaining complex and scalable UI applications. I have hands-on experience with Redux for global state management and Axios for REST API integration.
-
 I’ve also worked on banking domain projects where I developed role-based UI and dynamic multi-step forms with validations.
-
 Additionally, I have experience using React DevTools and Redux DevTools for debugging and performance optimization.
-
 Overall, I enjoy building clean and reusable components, solving real-world frontend challenges, and continuously improving user experience and application performance..
+
 
 What is hoisting?
 hoisting is default behaviour in js to move variable and function decliration to the top of the scope before code execution ie. during compiletime , only decliration are hoisted not the initializations , var is hoisted initialized as undefined where as let and const are hoistd but remain uninitialized in Temporal Dead Zone.
