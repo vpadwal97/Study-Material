@@ -1,10 +1,49 @@
 https://maps.googleapis.com/maps/api/geocode/json?latlng=19.0748,72.8856&key=AIzaSyCAzm3cPg8CTwxtwvbiAiksaBX0HfZOcpg
 
-Hi, my name is [name]. I’m a web developer with around 3 years of experience, primarily working with React.js.
-In my previous role at OctaShop, I was responsible for developing and maintaining complex and scalable UI applications. I have hands-on experience with Redux for global state management and Axios for REST API integration.
-I’ve also worked on banking domain projects where I developed role-based UI and dynamic multi-step forms with validations.
-Additionally, I have experience using React DevTools and Redux DevTools for debugging and performance optimization.
-Overall, I enjoy building clean and reusable components, solving real-world frontend challenges, and continuously improving user experience and application performance..
+Hi, my name is Vishwanath Padwal. I am a Web Developer with around 3.5 years of experience, primarily working with React.js.
+In my previous role, I was responsible for developing and maintaining large-scale, responsive user interfaces using reusable components. I have hands-on experience integrating REST APIs using Axios and implementing global state management using Redux Toolkit.
+I have also worked on features such as dynamic multi-step forms with validations and role-based user interfaces. Additionally, I have experience using React DevTools and Redux DevTools for debugging and performance optimization.
+Currently, I am working with React.js and Next.js applications, where I focus on building scalable and reusable components, integrating APIs, and improving application performance using techniques such as lazy loading, code splitting, SSR, and SSG.
+Overall, I am excited about opportunities where I can contribute my React.js and Next.js experience while continuing to grow my skills in modern frontend development.
+
+
+| Task                     | Next.js                               | React + Vite                      |
+| ------------------------ | ------------------------------------- | --------------------------------- |
+| Create Project           | `npx create-next-app@latest app-name` | `npm create vite@latest app-name` |
+| Install Dependencies     | `npm install`                         | `npm install`                     |
+| Start Dev Server         | `npm run dev`                         | `npm run dev`                     |
+| Build                    | `npm run build`                       | `npm run build`                   |
+| Preview Production Build | `npm start`                           | `npm run preview`                 |
+| Lint                     | `npm run lint`                        | `npm run lint`                    |
+| Type Check               | `npx tsc --noEmit`                    | `npx tsc --noEmit`                |
+
+
+| Feature / Task          | Next.js                                      | React (Vite)                          |
+| ----------------------- | -------------------------------------------- | ------------------------------------- |
+| Framework Type          | Full-stack framework                         | Frontend only (SPA)                   |
+| Env Access Syntax       | `process.env.VARIABLE_NAME`                  | `import.meta.env.VITE_VARIABLE_NAME`  |
+| File Name               | `.env.local`, `.env`, `.env.production`      | `.env`, `.env.local`                  |
+| Public Variables Prefix | `NEXT_PUBLIC_` (mandatory for client access) | `VITE_` (mandatory for client access) |
+| Server-side Secrets     | ✅ Supported (secure, not exposed to browser) | ❌ Not supported                       |
+| Client-side Variables   | `NEXT_PUBLIC_*`                              | `VITE_*`                              |
+| Example Env Variable    | `NEXT_PUBLIC_API_URL=https://api.com`        | `VITE_API_URL=https://api.com`        |
+| Usage in Code           | `process.env.NEXT_PUBLIC_API_URL`            | `import.meta.env.VITE_API_URL`        |
+| Security Level          | High (server env hidden from client)         | Low (everything exposed in bundle)    |
+| Restart Required        | Yes (after .env changes)                     | Yes (after .env changes)              |
+| Best Use Case           | Full-stack apps, APIs, auth, SSR             | Frontend SPAs, dashboards             |
+
+
+| Event          | Type                                    |
+| -------------- | --------------------------------------- |
+| `onClick`      | `React.MouseEvent<HTMLButtonElement>`   |
+| `onChange`     | `React.ChangeEvent<HTMLInputElement>`   |
+| `onSubmit`     | `React.FormEvent<HTMLFormElement>`      |
+| `onKeyDown`    | `React.KeyboardEvent<HTMLInputElement>` |
+| `onFocus`      | `React.FocusEvent<HTMLInputElement>`    |
+| `onBlur`       | `React.FocusEvent<HTMLInputElement>`    |
+| `onMouseEnter` | `React.MouseEvent<HTMLDivElement>`      |
+| `onMouseLeave` | `React.MouseEvent<HTMLDivElement>`      |
+
 
 
 What is hoisting?
